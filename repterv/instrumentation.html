@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Instrumentation - Repterv</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1587588390" title="wsite-theme-css" />
+<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-not-footer h2.wsite-content-title a, .wsite-not-footer .paragraph a, .wsite-not-footer blockquote a, #blogTable .blog-sidebar a, #blogTable .blog-comments a, #blogTable .blog-comments-bottom a, #wsite-com-store a, #wsite-com-product-gen a {color:#ae40a5 !important;}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+
+		<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.storeCountry = "HU";
+			_W.storeCurrency = "USD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "516664538863253668";
+			com_userID = "18889660";</script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"867427237238482426","title":"Maps\/Planning","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"223211645393958085","title":"Planning","url":"planning.html","target":"","nav_menu":false,"nonclickable":true},{"id":"137907232960682184","title":"ATPL","url":"atpl.html","target":"","nav_menu":false,"nonclickable":true},{"id":"335447514373405440","title":"A320 flow","url":"a320-flow.html","target":"","nav_menu":false,"nonclickable":false},{"id":"161039352793297101","title":"EW","url":"ew.html","target":"","nav_menu":false,"nonclickable":false},{"id":"153095001396538792","title":"Be76","url":"be76.html","target":"","nav_menu":false,"nonclickable":false},{"id":"247435634188075838","title":"TR","url":"tr.html","target":"","nav_menu":false,"nonclickable":true},{"id":"816667733144839826","title":"Procedures","url":"procedures.html","target":"","nav_menu":false,"nonclickable":true},{"id":"726940671199790417","title":"Memory Items","url":"memory-items.html","target":"","nav_menu":false,"nonclickable":false}],
+			"664084203886962006",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class="no-header-page  wsite-page-instrumentation wsite-theme-light"><div class="wrapper">
+    <div class="cento-header">
+      <div class="container">
+        <div class="logo"><span class="wsite-logo">
+
+	<a href="">
+	
+	<span id="wsite-title">Repterv</span>
+	
+	</a>
+
+</span></div>
+        <a class="hamburger" aria-label="Menu" href="#"><span></span></a>
+      </div>
+      <div class="nav-wrap">
+        <div class="container">
+          <div class="nav desktop-nav"><ul class="wsite-menu-default">
+		<li id="pg867427237238482426" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Maps/Planning
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-897384195455747960"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="x.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			x
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg223211645393958085" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				Planning
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-322463266303559357"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="napi-leacutegteacuter.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Napi l&eacute;gt&eacute;r
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-531421936156234231"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="charts.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Charts
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-269243837972145726"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="id337jaacuteraacutes.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Id&#337;j&aacute;r&aacute;s
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-199870981241859222"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="docs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			docs
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-703911212760669783"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="c150.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			C150
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-937275827355669122"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="c150-motorleaacutellaacutes.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			C150 Motorle&aacute;ll&aacute;s
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-518268039378130722"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="p28.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			P28
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg137907232960682184" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				ATPL
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-777890229582407763"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Air law
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-612148365499184051"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="international-law.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			international law
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-933008125174731187"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="airworthiness.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Airworthiness
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-490534366309278466"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="personal-licencing.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Personal licencing
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-656692680256864312"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="rules-of-the-air.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Rules of the air
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-136673164368177048"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="proc-for-air-navigation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Proc for air navigation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-597115321768110199"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="ats-and-at-management.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			ATS and AT management
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-915527415522521761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Meteorology
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-159693454122956748"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="atmosphere.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Atmosphere
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-466369049991664939"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="wind.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Wind
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-622698772121098529"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="thermodynamics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Thermodynamics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-775657675576070235"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="clouds-and-fog.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Clouds and fog
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-724556565572537421"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="precipitation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Precipitation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-897585982112299900"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="air-masses-and-fronts.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Air masses and fronts
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-437467918144089716"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="pressure-systems.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Pressure systems
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-447743372879942379"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="climatology.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Climatology
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-260982233377245811"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="flight-hazards.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Flight hazards
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-628670345906212108"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="meteorological-informations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Meteorological informations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-586355978103584761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="lawmet.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Law/Met
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-492029960144779090"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="general-nav.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			General nav
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-750555429123266013"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="fplanning--monitoring.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			fplanning & monitoring
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-664084203886962006"
+	class="wsite-menu-subitem-wrap wsite-nav-current"
+	>
+	<a
+				href="instrumentation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Instrumentation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-223469679423429358"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="radio-nav.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Radio nav
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-499189569977120975"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="human-performance-and-limitations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Human performance and limitations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-700872247576515165"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="performance.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Performance
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-898820104287279457"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="operational-procedures.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Operational procedures
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-897975943447235426"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="aerodynamics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Aerodynamics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-860510153222629014"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="021---airframe-systems-electrics-power-plant.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			021 - Airframe, Systems, Electrics, Power Plant
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-110815252827732883"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="mass--balance.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Mass & Balance
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-608809449707034918"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="felvi.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Felvi
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-352234064618678341"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="lot.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			LOT
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg335447514373405440" class="wsite-menu-item-wrap">
+			<a
+						href="a320-flow.html"
+				class="wsite-menu-item"
+				>
+				A320 flow
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-543482231491823787"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="emerg-brief.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Emerg brief
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-139601529765840534"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="go-around.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Go around
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg161039352793297101" class="wsite-menu-item-wrap">
+			<a
+						href="ew.html"
+				class="wsite-menu-item"
+				>
+				EW
+			</a>
+			
+		</li>
+		<li id="pg153095001396538792" class="wsite-menu-item-wrap">
+			<a
+						href="be76.html"
+				class="wsite-menu-item"
+				>
+				Be76
+			</a>
+			
+		</li>
+		<li id="pg247435634188075838" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				TR
+			</a>
+			
+		</li>
+		<li id="pg816667733144839826" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				Procedures
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-227391142337883491"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="airbus-procs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Airbus procs
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-579823370143501815"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="wzz-procs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			WZZ procs
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg726940671199790417" class="wsite-menu-item-wrap">
+			<a
+						href="memory-items.html"
+				class="wsite-menu-item"
+				>
+				Memory Items
+			</a>
+			
+		</li>
+</ul>
+</div>
+        </div><!-- end .container -->
+      </div><!-- end .nav-wrap -->
+    </div><!-- end .header -->
+
+    <div class="content-wrap">
+      <div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-background-10"  >
+		<div class="wsite-section-content">
+        <div class="container">
+			<div class="wsite-section-elements">
+				<h2 class="wsite-content-title"><span style="color:rgb(23, 24, 26)">022-01 - Sensors and Instruments</span></h2>
+
+<div class="paragraph"><font color="#17181a"><u><font size="5">Tachometer</font></u><br /><font size="5">&#8203;</font><span style="color:rgb(70, 73, 76)"><font size="3"><span style="font-weight:600">Single-phase AC generator tachometer</span><br />advantages:</font></span></font><ul><li><span style="color:rgb(70, 73, 76)">&#8203;the suppression of spurious signals due to a DC generator commutator (zavar&oacute; jelek elnyom&aacute;sa)</span></li><li><span style="color:rgb(70, 73, 76)">the independence of the information in relation to the airborne electrical power supply</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">&nbsp;3-phase synchronous motor type tachometer</span><ul><li>The frequency is proportional to the transmitter drive speed</li><li>The speed indicating element is a synchronous motor driving a magnetic tachometer</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">DC generator tachometer</span><ul><li><span style="color:rgb(70, 73, 76)">easy transmission of the information</span></li><li><span style="color:rgb(70, 73, 76)">independence of the information relative to the electrical power supply</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Three-phase electrical tachometer</span><ul><li>a synchronous motor turning a drag cup.</li><li>consist of a three-phase generator, a synchronous motor and a magnetic tachometer.</li><li><span style="color: rgb(70, 73, 76);">operating principle<span style="font-weight: 600;">&nbsp;</span></span>to measure the&nbsp;rotation speed of a synchronous motor energized by an alternator<br /></li></ul> &#8203;<span style="color:rgb(70, 73, 76); font-weight:600">Magnetic tachometer</span><ul><li>consist of a permanent magnet turning inside a non magnetic drag cup.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Electronic tachometer sensor</span><ul><li>a notched wheel rotating in front of an electro-magnet.</li><li>frequency of the electric impulse created by a notched wheel rotating in a magnetic field.</li><li>disadvantage: necessity of a power supply.</li></ul> &#8203;<span style="color:rgb(70, 73, 76); font-weight:600">The signal supplied by a transmitter fitted with a 3-phase AC generator, connected to RPM indicator, is</span><ul><li>a three-phase voltage, the frequency of which varies with the RPM; the indicator is provided with a motor which drives a magnetic tachometer.</li></ul> &#8203;<span style="color:rgb(70, 73, 76); font-weight:600">The transmitter of RPM indicator may consist of</span><ul><li>a magnetic sensor supplying an induced AC voltage</li><li>a three-phase AC generator supplying a three-phase voltage</li></ul></div>
+
+<div class="paragraph"><span style="color:rgb(70, 73, 76)"><u><font size="5">EPR/EGT/CHT/RPM</font></u><br /><strong>The sensor(s) feeding the EPR</strong></span><strong style="color:rgb(70, 73, 76)">-Engine Pressure Ratio-</strong><span style="color:rgb(70, 73, 76)"><strong>indicator</strong></span><ul><li>pressure probes, one located upstream from the compressor inlet, and the other downstream from the turbine outlet.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">If an EPR is set at a constant value, with an increasing OAT, the thrust:</span><ul><li>remains constant</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">The EPR (Engine Pressure Ratio) is</span><ul><li>turbine outlet/compressor inlet</li></ul><br /><span style="color:rgb(70, 73, 76); font-weight:600">&#8203;EGT (Exhaust Gas Temperature)</span><ul><li>The red pointer which is normally on the red line on the EGT - moves when the corresponding value is exceeded and remains positioned at the maximum value that has been reached.</li><li>measured at&nbsp;outlet of the high pressure stage of the turbine</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">CHT (Cylinder Head Temperature) probe</span><ul><li>temperature within the hottest cylinder, depending on its position in the engine block.</li><li>measure temp: thermocouple consisting of two dissimilar metals<br /></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Gas turbine engine rotational speed (RPM)&nbsp;</span>&#8203;<ul><li>a 3 phase AC tachometer generator or an AC phonic wheel system</li></ul> &#8203;<span style="color:rgb(70, 73, 76); font-weight:600">To calculate turbojet thrust</span><ul><li>compressor rotation speed (or N1) or the EPR (Engine Pressure Ratio).</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Transmitter fitted with a magnetic sensor, connected to an RPM indicator is</span><ul><li>an AC voltage, the frequency of which varies with the RPM; the indicator converts the signal into square pulses which are then counted.</li></ul></div>
+
+<div class="paragraph"><u><font size="5">Torque</font></u><br /><span style="color:rgb(70, 73, 76); font-weight:600">Torque can be determined by</span><ul><li>change in phase between the torque shaft and the reference shaft</li><li>measuring oil pressure at the fixed crown of an epicycloidal reducer of the main engine gearbox</li></ul><span style="color:rgb(70, 73, 76); font-weight:600">Electronic torque meter</span><ul><li>Increase in power causes twisting of the torque shaft</li></ul><span style="color:rgb(70, 73, 76); font-weight:600">Oil torque meter</span><ul><li>axial movement is generated by the helically cut gears.</li><li>axial force is proportional to the torque.<br /></li></ul></div>
+
+<div class="paragraph"><u><font size="5">Pressure</font></u><br /><span style="color:rgb(70, 73, 76); font-weight:600">The probe used to measure the air intake pressure of a gas turbine</span><ul><li>an aneroid cap</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Hydraulic pressure sensed</span><ul><li>By bellows via mechanical sensing from a bourdon tube.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Bourdon tube</span><ul><li>is used in&nbsp;pressure sensors</li></ul>&#8203;<span style="color:rgb(70, 73, 76); font-weight:600">Manifold pressure gauge</span><ul><li>absolute pressure in intake system near the inlet valve.</li></ul><span style="color:rgb(70, 73, 76); font-weight:600">Bellows sensor can be used for</span><ul><li>cabin differential pressure gauge</li></ul><span style="color:rgb(70, 73, 76); font-weight:600">Manifold pressure gauge consistently registers atmospheric pressure</span><ul><li>leak in pressure gauge line.</li></ul><span style="color:rgb(70, 73, 76); font-weight:600"></span></div>
+
+<div class="paragraph"><u><font size="4"><font size="5"><br />Temperature</font></font></u><br />&#8203;<span style="color:rgb(70, 73, 76); font-weight:600">Gas exhaust temperature</span><ul><li>hot and cold junction, alumel/chromel system.</li></ul> &#8203;<span style="color:rgb(70, 73, 76); font-weight:600">In transport category airplanes, the temperatures are generally measured with</span><ul><li><span style="color:rgb(70, 73, 76)">resistance thermometers</span></li><li><span style="color:rgb(70, 73, 76)">thermocouple thermometers</span></li></ul> <span style="color:rgb(70, 73, 76)"><span style="font-weight:600">Thermocouple</span></span><ul><li>E = K &times; Th</li><li><span style="color:rgb(70, 73, 76)">To permit turbine exit temperatures to be measured thermometers&nbsp;</span><span style="color:rgb(70, 73, 76)">work on the thermocouple&nbsp;principle</span></li><li>made of&nbsp;two metal conductors of different nature fixed together at two points.</li><li><span style="color:rgb(70, 73, 76)">has a maximum scale range from -200&deg;C up to 2</span><span style="color:rgb(70, 73, 76)">&nbsp;</span><span style="color:rgb(70, 73, 76)">000&deg;C</span></li></ul><span style="color:rgb(70, 73, 76)"></span><span style="color:rgb(70, 73, 76); font-weight:600">The electromotive force of a thermocouple is not modified if one or several intermediate metals are inserted in the circuit provided that</span><ul><li><span style="color:rgb(70, 73, 76); font-weight:600"></span><span style="color:rgb(0, 166, 81)">contact points are maintained at equal temperature between these different metals.</span><span style="color:rgb(70, 73, 76); font-weight:600"></span><span style="color:rgb(70, 73, 76)"></span></li></ul> <strong>Bimetallic thermometer</strong><ul><li>maximum scale range from -100&deg;C up to 600&deg;C</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Temperature gauge white sector</span><ul><li>a special operating range.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Red pointer on the EGT</span><ul><li>moves when the corresponding value is exceeded and remains positioned at the maximum value that has been reached</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Ratiometer-type temperature indicator</span><ul><li>carries out a measurement independent of the supply voltage.</li></ul></div>
+
+<div class="paragraph"><u><span style="color:rgb(70, 73, 76)"><font size="5">Alumel/chromel</font></span><br /></u>&#8203;&#8203;<span style="color:rgb(70, 73, 76); font-weight:600">Alumel/chromel indicating system</span><ul><li>Electrical requirements:&nbsp;power for gauge lighting only.</li></ul></div>
+
+<div class="paragraph"><u><font size="5">Fuel</font></u><br />&#8203;<span style="color:rgb(70, 73, 76); font-weight:600">Capacitor type contents gauges measures.</span><ul><li>charge of condensers</li><li>if water instead of fuel: shows&nbsp;a mass of water different from zero, but inaccurate</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Capacity fuel gauges&nbsp;</span><ul><li>provide information&nbsp;on mass whose indication is independent of the temperature of the fuel.</li><li>indications partly independent of fuel temperature variations</li><li>indications almost independent of the airplane's attitude and accelerations</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Capacitor</span><ul><li><span style="color:rgb(70, 73, 76)">The capacitance is proportional to the surface area of the plates</span></li><li><span style="color:rgb(70, 73, 76)">The capacitance is proportional to the relative permittivity.</span></li><li><em><span style="color:rgb(70, 73, 76)">The capacitance is NOT proportional to the distance between the plates.</span></em></li><li><span style="color:rgb(70, 73, 76)">unit to measure: Farad</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Principle of capacity gauges is based on the capacitance variation of</span><ul><li>a capacitor with the type of dielectric</li><li>capacitance variation of a given capacitor with the type of dielectric<br /></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">The gauge indicating the quantity of fuel measured by a capacity gauging system can be graduated directly in weight units because the dielectric constant of fuel is:</span><ul><li>twice that of air and varies directly with density.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Decrease in fuel temperature &nbsp;will result in</span><ul><li><span style="color:rgb(70, 73, 76)">increase in dielectric value (Er)</span></li></ul> <span style="color:rgb(70, 73, 76)">&#8203;</span><span style="color:rgb(70, 73, 76); font-weight:600">Low pressure fuel pump</span><ul><li>an aneroid capsule.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">A fuel flow meter</span><ul><li>incorporates a spring loaded vane.</li><li>measures&nbsp;quantity of fuel movement</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Fuel pressure gauge</span><ul><li><span style="color:rgb(70, 73, 76)">normally measured at the&nbsp;</span><span style="color:rgb(0, 166, 81)">Inlet of the fuel injection metering unit</span></li></ul> &#8203;<span style="color:rgb(70, 73, 76); font-weight:600">A float type fuel gauge</span><ul><li>is typically a DC powered system</li><li>indication varies with&nbsp;<span style="color:rgb(70, 73, 76)">aircraft attitude,&nbsp;accelerations, fuel temperature&#8203;</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Mass fuel flowmeter takes into account the fuel</span><ul><li>density</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">By integrating a fuel flow with respect to time we can obtain</span><ul><li>the volume or a mass of fuel.</li></ul> <strong>A paddle-wheel placed in the fuel circuit of a gas turbine engine initially measures:</strong><ul><li>volumetric flow by a tally of the impulses.</li></ul></div>
+
+<div class="paragraph"><u><font size="5">Millivoltmeter<br /></font></u><span style="color:rgb(70, 73, 76); font-weight:600">A millivoltmeter measuring the electromotive force between the "hot junction" and the "cold junction"</span><ul><li><span style="color:rgb(70, 73, 76)">cold junction is maintained constant.</span><u></u></li></ul></div>
+
+<div class="paragraph"><u><span style="color:rgb(70, 73, 76)"><font size="5">Synchroscope</font></span></u><br />&#8203;&#8203;<span style="color:rgb(70, 73, 76); font-weight:600">Purpose of a synchroscope</span><ul><li><span style="color:rgb(70, 73, 76)">avoid asymmetric flight conditions and reduce fuel consumption</span></li><li><span style="color:rgb(70, 73, 76)">reduce vibrations</span></li><li>A synchroscope shows if one engine is rotating faster, slower or with the same speed than the reference or &ldquo;master&rdquo; engine. Usually the master engine corresponds to the&nbsp;<strong>outer left</strong>&nbsp;engine.</li><li><span style="color:rgb(70, 73, 76)">gives information about engine speed</span></li><li>measures the difference in output frequencies of both alternators (one alternator in each engine)<br /></li></ul></div>
+
+<div class="paragraph"><u><font size="5">Vibration</font></u><br />&#8203;<span style="color:rgb(70, 73, 76); font-weight:600">Any vibration</span><ul><li>indicates rotor imbalance.</li><li>Vibration is indicated in the cockpit as&nbsp;a direct reading.</li><li>4&nbsp;<span style="color:rgb(0, 166, 81)">No units are specified</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Engine vibration monitoring system</span><ul><li>amplified and filtered before being fed to the cockpit indicator.</li><li>indicates the&nbsp;vibration amplitude at a given frequency.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">The RPM indicator (or tachometer) of a piston engine can include a small red arc within the arc normally used (green arc)</span><ul><li>propeller generates vibration, continuous rating is forbidden</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Principle of detection</span><ul><li>2 accelerometers</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Engine vibration transducer&nbsp;</span><ul><li>&#8203;always filtered to remove unwanted frequencies.</li></ul></div>
+
+<div class="paragraph"><u><font size="5">Calculations</font></u><br />&#8203;<span style="color:rgb(70, 73, 76); font-weight:600">3</span><span style="color:rgb(70, 73, 76); font-weight:600">&nbsp;</span><span style="color:rgb(70, 73, 76); font-weight:600">000 psi equals to&nbsp;</span><ul><li>200 bar. (<span style="color:rgb(70, 73, 76)">15 psi=1bar</span>)</li></ul>1 lbs = 0.45 kg<br /><span style="color:rgb(70, 73, 76)">P = T &times; &Omega; (P = Power, T = Torque, &Omega; = Angular Velocity)</span><br />1 ton = 2&nbsp;200 lbs<br /><span style="color:rgb(70, 73, 76)">15&deg; Celsius = 59&deg; Fahrenheit</span><br />Q = C &times; U<br />&#8203;<br />Capacitance = E &times; A &divide; D<br /><br /><span style="color:rgb(70, 73, 76)">Conversion between these scales:</span><br /><em><span style="color:rgb(70, 73, 76)">&bull; &deg;C = 5/9 &times; (&deg;F - 32)</span><br /><span style="color:rgb(70, 73, 76)">&bull; &deg;F = 1.8 &times; &deg;C + 32</span><br /><span style="color:rgb(70, 73, 76)">&bull; &deg;C = K - 273</span></em><br /><span style="color:rgb(70, 73, 76)"><em>&bull; K = &deg;C + 273</em></span><br /><br /><span style="color:rgb(70, 73, 76)">1) C = K - 273</span><br /><span style="color:rgb(70, 73, 76)">2) F = (C &times; 1.8) + 32<br /><br />ROD =&nbsp;&thorn; &times; 100 &times; GS &divide; 60</span><br /><span style="color:rgb(70, 73, 76)">(</span><em style="color:rgb(70, 73, 76)">Where:&nbsp;GS = Ground Speed; &thorn; = Glide slope angle in &deg;)</em><br /><span style="color:rgb(70, 73, 76)">ROD = 3 &times; 100 &times; 100 &divide; 60</span><br /><span style="color:rgb(70, 73, 76)">ROD = 500 ft/min<br /><br />&#8203;3.28 ft=1m</span><br /></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<div class="paragraph" style="text-align:left;"><em>022-02-03 - Angle of Attack Measurement<br />022-02-04 - Altimeter<br />022-02-05 - Vertical Speed Indicator (VSI)</em></div>
+
+<div class="paragraph"><u><span style="color:rgb(70, 73, 76)"><font size="5">Angle of attack transmitter</font></span></u><br /><span style="color:rgb(70, 73, 76)">varying with</span><ul><li><span style="color:rgb(70, 73, 76)">the angular position of a wind vane</span></li><li><span style="color:rgb(70, 73, 76)">a probe differential pressure depending on the variation of the angle of attack</span></li></ul> <span style="color:rgb(70, 73, 76)">may consist of</span><ul><li><span style="color:rgb(70, 73, 76)">a conical slotted probe which positions itself to determine the angle of attack</span></li><li><span style="color:rgb(70, 73, 76)">a vane detector which positions the rotor of a synchro-transmitter</span></li></ul><span style="color:rgb(70, 73, 76)">electrical signal indicating</span><ul><li><span style="color:rgb(70, 73, 76)">the angular position of a wind vane</span></li><li><span style="color:rgb(70, 73, 76)">a differential pressure in a probe, depending on the variation of the angle of attack</span></li></ul><span style="color:rgb(70, 73, 76)"></span><span style="color: rgb(70, 73, 76);">indicate the&nbsp;</span><span style="color: rgb(70, 73, 76);">angular position of</span><ul><li><span style="color:rgb(70, 73, 76)"></span><span style="color: rgb(70, 73, 76);">a vane detector</span></li><li><span style="color: rgb(70, 73, 76);">a conical slotted probe</span><span style="color:rgb(70, 73, 76)"></span></li></ul></div>
+
+<div class="paragraph"><u><span style="color:rgb(70, 73, 76)"><font size="5">Servo-assisted altimeter</font></span></u><ul><li>induction pick-off device</li><li>the <strong>capsules </strong>are detected by a very sensitive electro<strong>-magnetic pick-off</strong>.</li><li>lag error virtually eliminated by using an <strong>acceleration pump.</strong></li></ul></div>
+
+<div class="paragraph"><font color="#46494c" size="5"><u>Altimeter</u></font><br /><span style="color:rgb(70, 73, 76)">hysteresis error of an altimeter varies with</span><ul><li>time passed at a given altitude.</li><li><span style="color:rgb(70, 73, 76)">is a lag in the altitude indications caused by the elastic properties of the materials used in the aneroids</span><br /></li></ul></div>
+
+<div class="paragraph"><font color="#46494c" size="5"><u>Density altitude</u></font><ul><li>the altitude of the standard atmosphere on which the density is equal to the actual density of the atmosphere.</li></ul></div>
+
+<div class="paragraph"><u><span style="color:rgb(70, 73, 76)"><font size="5">Static pressure error</font></span></u><ul><li>depends on TAS and AOA</li><li>incorrect pressure sensing caused by disturbed airflow around the static ports.<br /></li></ul></div>
+
+<div class="paragraph"><u><span style="color:rgb(70, 73, 76)"><font size="5">Vertical speed detector</font></span></u><ul><li>may be improved by adding a&nbsp;correction based on an <strong>accelerometer sensor</strong>.</li><li>VSI based on the measurement of static pressure</li><li>VSI&nbsp;<span style="color:rgb(70, 73, 76)">temperature range of +50 &deg;C and -20 &deg;C &nbsp;</span>&plusmn; 200 ft/min<span style="color:rgb(70, 73, 76)"></span></li><li>VSI&nbsp;immediate trend information and stable climb or descent information after 6 to 12 seconds (depending on type).</li></ul></div>
+
+<div class="paragraph"><u><span style="color:rgb(70, 73, 76)"><font size="5">Pressure altitude</font></span></u><ul><li>in standard atmosphere, to the pressure P<font size="2">S</font>&nbsp;prevailing<strong> at this point</strong>.</li></ul></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<div class="paragraph"><span style="color:rgb(70, 73, 76)">CAS = IAS + Position + instrument error correction</span><br /><span style="color:rgb(70, 73, 76)">EAS = CAS + Compressibility error correction (pressure alt)</span><br /><span style="color:rgb(70, 73, 76)">TAS = EAS + Density error correction</span><br /><span style="color:rgb(70, 73, 76)">TAS = CAS + Compressibility error correction + Density Error correction<br /><br /><strong>TAS</strong>=<u>IAS+POS+INSTR</u>+COMPR+DENS<br />&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>CAS<br />&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<u>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</u><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; EAS</strong></span><br /><br /><br />&#8203;EAS is always lower than or equal to CAS</div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/8/8/8/18889660/asi_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div class="paragraph"><u><font size="4"><font size="5">Speeds</font></font></u><br /><strong style="color:rgb(70, 73, 76)">White arc</strong><span style="color:rgb(70, 73, 76)">&nbsp;- extends from&nbsp;</span><strong style="color:rgb(70, 73, 76)">VSO</strong><span style="color:rgb(70, 73, 76)">&nbsp;(stall full flap) to&nbsp;</span><strong style="color:rgb(70, 73, 76)">VFE</strong><span style="color:rgb(70, 73, 76)">&nbsp;(maximum speed with flaps extended) and marks the flap operating range.</span><br /><span style="color:rgb(70, 73, 76)">&bull;&nbsp;</span><strong style="color:rgb(70, 73, 76)">Green arc</strong><span style="color:rgb(70, 73, 76)">&nbsp;- from&nbsp;</span><strong style="color:rgb(70, 73, 76)">VS1</strong><span style="color:rgb(70, 73, 76)">&nbsp;(stall clean) to</span><strong style="color:rgb(70, 73, 76)">&nbsp;VNO</strong><span style="color:rgb(70, 73, 76)">&nbsp;(normal operating speed). This is the normal operating range of speeds.</span><br /><span style="color:rgb(70, 73, 76)">&bull;&nbsp;</span><strong style="color:rgb(70, 73, 76)">Yellow arc</strong><span style="color:rgb(70, 73, 76)">&nbsp;- from&nbsp;</span><strong style="color:rgb(70, 73, 76)">VNO</strong><span style="color:rgb(70, 73, 76)">&nbsp;to&nbsp;</span><strong style="color:rgb(70, 73, 76)">VNE</strong><span style="color:rgb(70, 73, 76)">&nbsp;(never exceed speed). This denotes the &ldquo;use with caution&rdquo; range (or sometimes called the "structural warning range"). It should not be used in conditions other than smooth air.</span><br /><span style="color:rgb(70, 73, 76)">&bull;&nbsp;</span><strong style="color:rgb(70, 73, 76)">Red line</strong><span style="color:rgb(70, 73, 76)">&nbsp;- marks&nbsp;</span><strong style="color:rgb(70, 73, 76)">VNE</strong><span style="color:rgb(70, 73, 76)">.</span><br /><span style="color:rgb(70, 73, 76)">&bull;&nbsp;</span><strong style="color:rgb(70, 73, 76)">Blue line</strong><span style="color:rgb(70, 73, 76)">&nbsp;- is used only on light multi-engine aircraft and marks&nbsp;</span><strong style="color:rgb(70, 73, 76)">VYSE</strong><span style="color:rgb(70, 73, 76)">&nbsp;= best rate of climb single-engine.</span><br /><u><font size="4"><font size="5">&#8203;</font></font></u><ul><li><font size="3">V</font><font size="2">MO <span style="color:rgb(70, 73, 76)">(Velocity Maximum Operating)</span>&nbsp;</font>CAS or EAS / calculated from EAS</li><li>V<font size="2">LE</font> &nbsp; max flight speed with landing gear down.</li><li>V<font size="2">LO</font>&nbsp;<span style="color:rgb(70, 73, 76)">the maximum speed for extending or retracting the landing gear</span></li><li>V<font size="2">NO</font>&nbsp;maximum structural cruising speed.</li><li>&nbsp;blue radial line: best single-engine rate of climb</li></ul> <strong>ASI</strong><ul><li>&#8203;indicates IAS&#8203;</li></ul> <strong>CAS and pressure altitude&nbsp;</strong><ul><li>EAS</li></ul> <span style="color:rgb(70, 73, 76)">With constant weight and configuration, an aircraft always takes off at the same</span><ul><li>EAS</li></ul> At constant weight,<strong> regardless of altitude</strong>, an aircraft always lifts off at a constant<ul><li>CAS</li></ul> <strong>IAS</strong><br />Pitot blocked:<ul><li>climb: difference between stat&nbsp;and total grows: shows higher speed: increases steadily</li></ul> pitot tube is leaking<ul><li>under-read (diff between stat and total decreases)</li></ul> static port blocked<ul><li>descend over read (high) diff grows (less static pressure higher diff)</li></ul> &#8203;&#8203;<strong>IAS</strong><ul><li>the indicated reading on the instrument</li></ul> <span style="color:rgb(70, 73, 76)">The airspeed indicator is fed by:</span><ul><li><span style="color:rgb(70, 73, 76)">&#8203;P<font size="2">D </font><font size="3">(P</font><font size="2">T</font><font size="3">=P</font><font size="2">D</font><font size="3">+P</font><font size="2">S</font><font size="3">)</font></span></li></ul> <strong>calibrated </strong>to the Saint-Venant formula<ul><li>&#8203;CAS</li></ul> Compressibility error&nbsp;<ul><li>TAS greater than approximately 200 kts.</li></ul> <span style="color:rgb(70, 73, 76)">During descent, the total pressure probe of the airspeed indicator becomes blocked. In this case:</span><ul><li><span style="color:rgb(70, 73, 76)">IAS becomes lower than CAS.</span></li><li><span style="color:rgb(70, 73, 76)">While trying to maintain IAS constant, V</span>MO<span style="color:rgb(70, 73, 76)">&nbsp;may be exceeded.</span></li></ul> constant CAS and flight level is flying from a warm air mass into colder air<ul><li><span style="color:rgb(70, 73, 76)">P</span>D<span style="color:rgb(70, 73, 76)">&nbsp;= &frac12; &rho;V</span>2<font color="#46494c">,&nbsp;<span style="color:rgb(70, 73, 76)">&rho; n&#337;,&nbsp;V (TAS) cs&ouml;kkenie kell, hogy PD (CAS)&nbsp;&aacute;ll. maradjon</span></font></li><li><span style="color:rgb(0, 166, 81)">lower TAS because air density increases</span></li></ul>blocked pitot head with a clear static source causes the airspeed indicator to:<ul><li>react like an altimeter</li></ul> <strong>striped needle</strong><ul><li>maximum operating speed (V<font size="2">MO</font>).</li></ul></div>
+
+<div class="paragraph"><font size="5">ADC/Machmeter</font><br /><br /><span style="color:rgb(70, 73, 76)"><font size="3"><strong>ADC (Air Data Computer)</strong><br />used by</font></span><ul><li><span style="color:rgb(70, 73, 76)">EFIS</span></li><li><span style="color:rgb(70, 73, 76)">Transponder</span></li><li><span style="color:rgb(70, 73, 76)">Automatic Flight Control System (AFCS)</span></li></ul> <span style="color:rgb(70, 73, 76)">data input</span><ul><li><span style="color:rgb(70, 73, 76)">TAT</span></li><li><span style="color:rgb(70, 73, 76)">static pressure</span></li><li><span style="color:rgb(70, 73, 76)">total pressure</span></li><li><span style="color:rgb(70, 73, 76)"></span><span style="color: rgb(70, 73, 76);">radio aids</span></li><li><span style="color: rgb(70, 73, 76);">engine parameters</span></li><li><span style="color: rgb(70, 73, 76);">air data</span></li><li><span style="color: rgb(70, 73, 76);">route data</span></li><li><span style="color: rgb(70, 73, 76);">terminal data</span></li><li><span style="color: rgb(70, 73, 76);">operating data</span><span style="color:rgb(70, 73, 76)"></span></li></ul><br /> <span style="color:rgb(70, 73, 76)">advantages&nbsp;</span><span style="color:rgb(70, 73, 76)">to indicate the altitude</span><ul><li>Position / Pressure error correction.</li><li>Density error correction.</li><li>Remote data transmission capability</li></ul> The output data<ul><li>Pressure altitude</li><li>TAT</li><li>SAT</li><li>TAS</li><li>CAS</li><li>Mach nr</li></ul> <strong>ADC</strong><ul><li>receives the <strong>static pressure</strong> and the<strong> total pressure</strong>,</li><li>supplies the <strong>TAS</strong> to the computer of the INS,</li><li>determines the <strong>Mach number</strong>, the <strong>outside (static) air temperature</strong></li></ul> transforms air data measurements into electric impulses driving servo motors in instruments.<br /><br /><span style="color:rgb(70, 73, 76)">Mach number = TAS &divide; LSS<br /><strong>TAS=Mach number*LSS</strong></span><br /><span style="color:rgb(70, 73, 76)"><strong>Mach number = CAS &divide; Static pressure</strong></span><br /><strong>LSS = 38.95 &times; &radic;Absolute Temp in K</strong><ul><li>Mach number is the ratio of dynamic pressure to static pressure P<font size="2">D</font>/P<font size="2">S</font></li><li>Mach number is the ratio of the TAS to the speed of sound at the altitude considered</li><li><span style="color:rgb(70, 73, 76)">Climb (regardless of temp) =&gt; TAS and Mach increase&nbsp;</span></li><li><span style="color:rgb(70, 73, 76)">Descent (regardless of temp) =&gt; TAS and Mach decrease</span></li><li>Climb LSS decreases</li></ul><br />Machmeter readings are subject to:<ul><li>position error</li></ul><br />&#8203;<strong>CAS to TAS</strong><br /><br />&#8203;<span style="color:rgb(70, 73, 76)">To convert CAS to TAS without flight computer</span><br /><span style="color:rgb(70, 73, 76)">A calculation method that gives approx. result is: 5-600 rule</span><br /><br /><span style="color:rgb(70, 73, 76)">add %1 for every "5 C" deviation from ISA</span><br /><span style="color:rgb(70, 73, 76)">add %1 for every 600 feet</span>position error.</div>
+
+<div class="paragraph"><span style="color:rgb(23, 24, 26)"><font size="5">022-03 - Magnetism - <a href="general-nav.html" target="_blank">Direct Reading Compass</a> And Flux Valve</font></span></div>
+
+<div class="paragraph"><span style="color:rgb(70, 73, 76)"><strong>flux valve</strong></span><ul><li><span style="color:rgb(70, 73, 76)">The information can be used by a "flux gate" compass or a <strong><a href="https://www.youtube.com/watch?v=Gn6Rvzqty0c" target="_blank">directional gyro</a></strong>.</span></li><li><span style="color:rgb(70, 73, 76)">The error in the value of the magnetic field indication is less than 0.5%.</span></li><li>to sense the direction of the Earth's magnetic field relative to the airplane.</li><li><span style="color:rgb(70, 73, 76)">sensor part:<span style="font-weight:600">&nbsp;</span></span>the three pick-up coils.</li><li>is fed to:&nbsp;the stator in the slaved gyro control.</li></ul> Deviation compensation in a flux gate compass is done: <strong>mechanically</strong>.<br /><span style="color:rgb(70, 73, 76); font-weight:600">Heading information from the gyromagnetic compass flux gate is transmitted to the:&nbsp;</span>error detector.<br /><span style="color:rgb(70, 73, 76)"><strong>remote indicating compass</strong></span><ul><li>mounting the detector unit (flux valve) in the <strong>wingtip</strong>.</li><li>is supplied with AC current.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">compass check swing</span><ul><li>measure the angle between Magnetic North and compass North</li><li>determine the amount by which the compass readings are affected by hard and soft iron magnetism.</li><li>to reduce&nbsp;deviation</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Magnetism is concentrated at the extremities of the bar magnet.<br />Quadrantal deviation of a magnetic compass is corrected by</span><ul><li>pairs of permanent magnets</li><li>and due to&nbsp;the<strong> soft iron</strong> pieces influenced by the <strong>geomagnetic field.</strong></li></ul><strong><span style="color:rgb(70, 73, 76)">Hard iron</span><span style="color:rgb(70, 73, 76)">&nbsp;magnetism is known as the permanent magnetism and&nbsp;</span><span style="color:rgb(70, 73, 76)">soft iron</span></strong><span style="color:rgb(70, 73, 76)"><strong>&nbsp;magnetism is known as temporary magnetism</strong></span><br /><br /><span style="color:rgb(70, 73, 76); font-weight:600">The purpose of a magnetic compass calibration</span><ul><li>determine the residual deviations.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Hard iron magnetism</span><ul><li>&#8203;&#8203;steel components, mainly in engines and undercarriage.</li><li>magnetic qualities of the cargo or baggage.</li><li>a strike of lightning.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">landing compass</span><ul><li>used to establish aircraft magnetic heading during a compass swing.</li></ul> <strong>Turning errors </strong><ul><li>are greatest on north/south headings, and are greatest at high latitudes.</li><li>maximum at the magnetic poles.</li><li>increases when the magnetic latitude increases.</li></ul><br /><span style="color:rgb(70, 73, 76)"><strong><a href="https://www.youtube.com/watch?v=gAMnzB_7K-k&amp;feature=youtu.be" target="_blank">UNOS</a></strong></span><ul><li><span style="color:rgb(70, 73, 76)">we should overshoot or undershoot by roughly the amount resulting from this formula: (bank angle + latitude) &divide; 2.&nbsp;&#8203;</span></li></ul> <span style="color:rgb(70, 73, 76)"><em>Assume you are in the northern hemisphere and you turn from west to north. When your airplane nose points due north, the compass will show less = undershoot. And this is also the indication you want to see as a pilot when rolling out north, so you too will undershoot.</em></span><br /><br /><span style="color:rgb(70, 73, 76); font-weight:600">One purpose of compass calibration is to determine the deviation</span><ul><li>on any heading.&#8203;</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">directive force</span><ul><li>is greatest at the magnetic equator.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Direct reading magnetic compass errors are:</span><ul><li>due to north change, depending on the bank angle and magnetic heading.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">gyromagnetic compass slaving torque motor</span><ul><li>to produce a precesive force in order to align the gyro with the Earth's magnetic field.</li></ul> <strong>liquid swirl&nbsp;</strong><ul><li>slows compass down</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">carrying out a compass swing</span><ul><li>After an aircraft has passed through a severe electrical storm, or has been struck by lightning.&#8203;</li><li>there is a large, and permanent, change in magnetic latitude.</li></ul> &#8203;<em style="color:rgb(70, 73, 76)">Beyond the critical bank angle (equal to 90 minus the dip angle), the compass lags by 180 degrees when the airplane is banked toward the equator.</em><br /><strong>The main cause of error in a DRMC is:</strong><ul><li>turning</li></ul></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<div class="paragraph"><span style="color:rgb(23, 24, 26)"><font size="5">022-04 - Gyroscopic Instruments</font></span></div>
+
+<div class="paragraph"><em style="color:rgb(70, 73, 76)"><strong>DGI<a href="https://www.youtube.com/watch?v=Gn6Rvzqty0c" target="_blank">&nbsp;</a></strong></em><a href="https://www.youtube.com/watch?v=Gn6Rvzqty0c" target="_blank">(directional gyro</a>)<br /><span style="color:rgb(70, 73, 76)">&ldquo;</span><strong style="color:rgb(70, 73, 76)">Drift</strong><span style="color:rgb(70, 73, 76)">&rdquo; = movement of the gyro spin axis along the <strong>horizontal </strong>plane,</span><br /><span style="color:rgb(70, 73, 76)">&ldquo;</span><strong style="color:rgb(70, 73, 76)">Topple</strong><span style="color:rgb(70, 73, 76)">&rdquo; = movement of the gyro&rsquo;s spin axis in the <strong>vertical </strong>plane.</span><br /><strong style="color:rgb(70, 73, 76)">Real wander: the&nbsp;</strong><ul><li><span style="color:rgb(70, 73, 76)">spin axis actually moves in relation to its original fixed position in space</span></li><li><span style="color:rgb(70, 73, 76)">such as an imperfectly balanced gyroscope rotor</span></li></ul> <strong style="color:rgb(70, 73, 76)">Apparent wander (Earth rate)</strong><ul><li><span style="color:rgb(70, 73, 76)">the observer rotates with the Earth</span></li><li><span style="color:rgb(70, 73, 76)">Rate of apparent DRIFT in &deg; per hour = 15&deg; &times; sin (latitude); Apparent drift is zero at the equator and maximum (15&deg; per hour) at the poles. (Turns right N and left S)</span><br /><span style="color:rgb(70, 73, 76)">&bull; Rate of apparent TOPPLE in &deg; per hour = 15&deg; &times; cos (latitude); Apparent topple is zero at the poles and maximum (15&deg; per hour) at the equator. (Turns right N and left S)</span></li></ul> <strong style="color:rgb(70, 73, 76)">Transport wander</strong><ul><li><span style="color:rgb(70, 73, 76)">has the same effect as the rotation of the Earth.&nbsp;</span></li><li><span style="color:rgb(70, 73, 76)">&#8203;happens when the gyro is attached to a structure (for example an aircraft) that changes its position on Earth in the east-west direction</span></li></ul> <strong><span style="color:rgb(70, 73, 76)">DRIFT NORTH: sin lat *15 right</span><br />DRIFT SOUTH: sin lat*15 left</strong><br /><br /><font size="4">GYRO</font><br /><span style="color:rgb(70, 73, 76); font-weight:600"><a href="https://www.youtube.com/watch?v=C0pZ-mVcbbI&amp;t=929s" target="_blank">electric artificial horizon</a></span><ul><li>tied to the&nbsp;Earth's <strong>vertical </strong>by two mercury level switches and two torque motors.</li></ul> <strong>artificial horizon</strong><ul><li><strong>2 degrees of freedom</strong>, plus an automatic erection system that attempts to align the gyro rotor spin axis to the <strong>local vertical</strong>.</li><li>2 degrees of freedom and a vertical axis.<br /></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">vacuum operated attitude indicator</span><ul><li>automatic erection of the gyro is performed by&nbsp;the <strong>pendulous unit</strong>.</li><li><span style="color:rgb(70, 73, 76)">operating principle of&nbsp;</span>pendulous&nbsp;vane: the <strong>air flow</strong> reaction through the open vanes.</li></ul> <strong>air driven gyro</strong><ul><li>9<span>&nbsp;</span>000-12<span>&nbsp;</span>000 RPM.</li><li><span style="color:rgb(70, 73, 76)">prevented from spinning too fast by the&nbsp;</span>vacuum relief valve.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">rate gyro&nbsp;</span><ul><li>used in a&nbsp;<a href="https://www.youtube.com/watch?v=yWxuLY4R60E" target="_blank">turn co-ordinator</a></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">gyroscope</span><ul><li><span style="color:rgb(70, 73, 76)">the best efficiency<span style="font-weight:600">&nbsp;</span></span><span style="color:rgb(70, 73, 76)">mass is&nbsp;</span>on the periphery and with a high rotation speed.</li><li><span style="color:rgb(70, 73, 76)">rigidity in space</span></li><li><span style="color:rgb(70, 73, 76)">precession</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">axis of a free gyroscope is fixed with reference to:</span><ul><li>space</li></ul> <span style="color:rgb(70, 73, 76)"><span style="font-weight:600">DGI </span><a href="https://www.youtube.com/watch?v=Gn6Rvzqty0c" target="_blank">directional gyro</a><span style="font-weight:600">&nbsp;</span>(giro compass)</span><ul><li><span style="color:rgb(70, 73, 76)">wander&nbsp;equal to 0 at the equator (</span><span style="color:rgb(70, 73, 76)">Apparent wander: DRIFT</span><span style="color:rgb(70, 73, 76)">)</span></li><li>equipped with a gyro with <strong>2 degrees of freedom</strong> and a<strong> horizontal spin axis</strong></li><li><span style="color:rgb(70, 73, 76)">incapable of self-orientation around an earth-tied direction</span></li><li>convergence of the meridians in northerly and southerly latitudes:&nbsp;<strong>transport error.</strong></li><li><span style="color:rgb(70, 73, 76)">corrected by&nbsp;</span>direct reading magnetic compass</li><li><em><span style="color:rgb(70, 73, 76)"><u>errors</u>:</span></em></li><li>rotation of Earth</li><li>aeroplane motion on Earth/<span style="color:rgb(70, 73, 76)">change of aircraft position</span></li><li>lateral and transversal (&aacute;tl&oacute;s) aeroplane bank angles</li><li>mechanical defects</li><li><span style="color:rgb(70, 73, 76)">gimballing errors</span></li></ul> <strong>DGI indication valid only for a short period of time because of</strong><ul><li><span style="color:rgb(70, 73, 76)">The Earth's rotation</span></li><li><span style="color:rgb(70, 73, 76)">The aircraft's motion over the surface of the Earth.</span></li><li><span style="color:rgb(70, 73, 76)">The mechanical defects of the gyro</span></li><li><span style="color:rgb(70, 73, 76)">The gimbal mount of the gyro rings</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">slaved directional gyro/gyromagnetic compass</span><ul><li>signal from&nbsp;the flux valve.</li><li>heading is sent to&nbsp;error detector.</li><li><span style="color:rgb(70, 73, 76)">detection system of the local vertical feeds&nbsp;</span>a levelling erection torque motor.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">gyro instruments topple</span><ul><li>Because the gimbals reach their limiting stops.</li></ul><br /><font size="4">COMPASS</font><br /><span style="color:rgb(70, 73, 76); font-weight:600"><a href="https://www.youtube.com/watch?v=-MvxeNenFXE" target="_blank">gyromagnetic compass</a></span><ul><li>is maintained horizontal</li><li>is servo-controlled in azimuth</li><li><span style="color:rgb(70, 73, 76)">torque motor&nbsp;</span>causes the directional gyro unit to precess.</li><li><span style="color:rgb(70, 73, 76)">torque motor get its information&nbsp;</span><span style="color:rgb(70, 73, 76)">from&nbsp;</span><strong>Amplifier</strong>.</li><li><span style="color:rgb(70, 73, 76)">input signal of the amplifier comes from&nbsp;</span><strong>error detector.</strong></li><li><em style="color:rgb(70, 73, 76)">Flux valve =&gt; Error detector =&gt; Amplifier =&gt; Torque motor. FEAT</em></li><li>flux valve <span style="color:rgb(70, 73, 76)">gives the Earth's magnetic field direction</span>&nbsp;/&nbsp;<span style="color:rgb(70, 73, 76)">feeds the error detector</span></li><li><span style="color:rgb(70, 73, 76)">pendulum type detector sys feeds&nbsp;</span>a levelling erection torque motor.</li><li><span style="color:rgb(70, 73, 76)">pendulum type detector provides torque on sensitive axis</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">remote reading compass(=</span>gyromagnetic compass)<ul><li>aligned with the magnetic meridian by&nbsp;a torque motor.</li><li>synchronizing the magnetic and gyro compass elements.</li></ul> <strong><a href="https://www.youtube.com/watch?v=yWxuLY4R60E" target="_blank">turn indicator</a></strong><ul><li>1 degree of freedom and a horizontal spin axis</li><li><em><span style="color:rgb(70, 73, 76)">uses a gyroscope:</span></em></li><li>with one degree of freedom</li><li>the frame of which is supported by two return springs</li><li>the axis of the spinning wheel is parallel to the lateral/pitch axis</li></ul><br /><strong>Micro-Electromechanical Systems (MEMS) can be used to make the following sensors:</strong><ul><li>solid-state accelerometers</li><li>solid-state rate sensor gyroscopes</li><li>solid-state magnetometers</li></ul> <strong><a href="https://www.youtube.com/watch?v=yWxuLY4R60E" target="_blank">The turn coordinator</a></strong><ul><li>indicates <strong>roll rate</strong>, rate of turn, and co-ordination;</li></ul> <strong>the turn and slip indicator </strong><ul><li>indicates rate of turn and co-ordination.</li><li>indicates the rate at which the aircraft is turning about the yaw axis.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">&nbsp;main cause of precession</span><ul><li>Bearing friction.</li></ul> <strong>AHRS</strong><ul><li>Lower size</li><li>lower weight</li><li>lower costs</li><li>higher accuracy</li><li>higher reliability</li></ul><br />Angle of bank = (TAS&nbsp;&divide; 10) + 7&nbsp;<br /><span style="color:rgb(70, 73, 76)">Angle of bank =&nbsp;15% of IAS</span><br /><br /><strong style="color:rgb(70, 73, 76)">Summary for Air-Driven Indicators:</strong><br /><span style="color:rgb(70, 73, 76)">&bull; Acceleration =&gt; apparent climbing turn to the right;</span><br /><span style="color:rgb(70, 73, 76)">&bull; Deceleration =&gt; apparent descending turn to the left;</span><br /><span style="color:rgb(70, 73, 76)">&bull; Turn through 90&deg; =&gt; apparent climb; under-indication of bank;</span><br /><span style="color:rgb(70, 73, 76)">&bull; Turn through 180&deg; =&gt; apparent climb; correct bank indication;</span><br /><span style="color:rgb(70, 73, 76)">&bull; Turn through 270&deg; =&gt; apparent climb; over-indication of bank;</span><br /><span style="color:rgb(70, 73, 76)">&bull; Turn through 360&deg; =&gt; both pitch and roll indicated correctly.</span><br /><br /><strong style="color:rgb(70, 73, 76)">Summary for Electrical-Driven Indicators:</strong><br /><span style="color:rgb(70, 73, 76)">&bull; Acceleration =&gt; apparent climb</span><br /><span style="color:rgb(70, 73, 76)">&bull; Deceleration =&gt; apparent descent</span></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<div class="paragraph"><span style="color:rgb(23, 24, 26)"><font size="5">022-05 - Inertial Navigation and Refrence Systems (INS and IRS)</font></span></div>
+
+<div class="paragraph"><span style="color:rgb(70, 73, 76); font-weight:600"><u><font size="4">INS</font></u><br />central air data computer (CADC)</span><ul><li><span style="color:rgb(70, 73, 76)">fail: INS&nbsp;</span><span style="color:rgb(70, 73, 76)">no info about&nbsp;</span>the <strong>wind direction and speed</strong>.</li></ul> <em><span style="color:rgb(70, 73, 76)">1</span>st<span style="color:rgb(70, 73, 76)">&nbsp;integration: velocity<br />2</span>nd<span style="color:rgb(70, 73, 76)">&nbsp;integration: distance</span></em><br /><strong><a href="https://www.youtube.com/watch?v=aZf55kAvO3A" target="_blank">INS</a></strong><ul><li>Amounts to making a <strong>time multiplication</strong>.</li><li>Enable to get position from accelerations.</li><li><span style="color:rgb(70, 73, 76)">initial alignment&nbsp;by inputs from:&nbsp;</span>horizontal accelerometers and the east gyro.</li><li>INS: OFF-STBY-ALIGN-NAV-ATT</li><li>IRS: OFF-ALIGN-NAV-ATT</li><li>if NAV inop:&nbsp;becomes artificial horison, if hdg is typed can show deviation from course</li><li>if NAV inop: the ATT mode which supplies attitude and heading data.</li><li>NAV fails&nbsp;switch in ATT:&nbsp;attitude and heading/it can only be used for attitude reference.(also after OFF position of the switch)</li><li>NAV is the normal system setting; the ATT position is the back up position in case of failure of the navigation function.</li><li>NAV mode:&nbsp;the normal operating mode allowing use of all the functions of the system.</li><li>on "ALIGN" the unit aligns on the local geographic trihedron</li><li>setup: is only possible on the ground when the aircraft is at a complete stop.</li><li>position update:&nbsp;Only on the ground during the alignment procedure.</li><li><span style="color:rgb(70, 73, 76)">integration process makes a:&nbsp;</span><strong>time multiplication</strong>.</li><li>GS&nbsp;is calculated:&nbsp;by integrating measured acceleration.</li><li><span style="color:rgb(70, 73, 76)">The rate gyros and the accelerometers are mounted on the same platform.</span></li><li><span style="color:rgb(70, 73, 76)">The principle of operation requires at least 2 accelerometers</span></li><li>3 rate gyros and 2 accelerometers.</li><li><span style="color:rgb(70, 73, 76)">positioning the platform relative to&nbsp;</span>the vertical axis and true north.</li><li><span style="color:rgb(70, 73, 76)">the platform is leveled before azimuth alignment</span></li><li><span style="color:rgb(70, 73, 76)">entering waypoints in INS: lat long!</span></li><li>position error 0.5 to 2 NM per hour.</li><li><span style="color:rgb(70, 73, 76)">the horizontal alignment precedes the unit orientation calculation</span></li><li><span style="color:rgb(70, 73, 76)">a battery test takes place during the alignment phase</span></li><li><span style="color:rgb(70, 73, 76)">&nbsp;initial alignment:&nbsp;</span>will not accept a 10&deg; error in initial <strong>latitude </strong>but will accept a 10&deg; error in initial <strong>longitude</strong>.</li><li>drift:&nbsp;is the main error source.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">The resultant of the <u>first integration</u> of the output from the East / West accelerometer of an inertial navigation system (INS) in NAV mode is</span><ul><li><u>velocity </u>along the local parallel of latitude.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Schuler platform</span><ul><li><span style="color:rgb(70, 73, 76)">oscillate&nbsp;</span>84 minutes.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">principle of the Schuler pendulum</span><ul><li>stabilised platform inertial system.</li></ul> <strong>Gyro-compassing in an INS:</strong><ul><li>is not possible in flight as the gyros cannot differentiate between acceleration due to aircraft movement and initial alignment errors.</li></ul> <strong>The position error of a stand alone inertial system is:</strong><ul><li>small a few minutes after initialisation and increases along the flight.</li><li>due to the drift of the gyroscopes.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">accelerations are measured in a trihedron (= pitch, roll and yaw axis) which is</span><ul><li>free from the aircraft trihedron.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">main causes of cumulative distance errors</span><ul><li>wander in the levelling gyros and integrator errors in the second stage of integration.</li><li>initial azimuth misalignment of the platform and wander of the azimuth gyro.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">maintain an accurate vertical using a pendulous system</span><ul><li>with damping and a period of about 84 minutes</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">W/V readout</span><ul><li>TAS</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">triple fit Inertial Navigation System (INS)</span><ul><li>The positions are likely to differ because they are calculated from different sources.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">to obtain position&nbsp;</span><ul><li><span style="color:rgb(70, 73, 76)">Double integration of acceleration according to time.</span><br /><span style="color:rgb(70, 73, 76)"><strong>or</strong>&nbsp;single integration of speed according to time.</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">to obtain the change in speed</span><ul><li>single integration of acceleration according to time.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">to know distance travelled</span><ul><li>Integrate once the speed in time</li><li>integrating once the speed in time is sufficient.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">After alignment of the stable platform&nbsp;output data</span><ul><li><strong>acceleration </strong>north/south and east/west, <strong>attitude </strong>and true <strong>heading</strong>.</li></ul> <strong>Allignment phase</strong><ul><li>levelling the platform and determining its orientation. <em>ebben a sorrendben</em></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">rate integrating gyro&nbsp;is used in</span><ul><li>inertial attitude unit</li><li>inertial navigation unit</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Double integration of the output from the East / West accelerometer</span><ul><li>distance East / West.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">output data from the INS computer to the platform is</span><ul><li>rate corrections to the gyros.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">maintained at right angles to the local vertical by applying corrections for</span><ul><li>aircraft manoeuvres,</li><li>Earth rotation,</li><li>transport wander and</li><li>Coriolis.</li></ul> <strong>The characteristics of the Earth which are being used during the alignment of an INS platform are:</strong><ul><li>Earth rotation and gravity.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">inertial system, this platform</span><ul><li><span style="color:rgb(70, 73, 76)">Can be servo-controlled in azimuth.</span></li><li><span style="color:rgb(70, 73, 76)">Is always kept levelled</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">The resultant of the first integration of the output from the North / South accelerometer</span><ul><li>Velocity along the local meridian.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">initial great circle track</span><ul><li>DSR TK/STS</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">The alignment time, at mid-latitudes, for an Inertial Navigation System using gimbal gyros is approximately:</span><ul><li>20 min&nbsp;(<em style="color:rgb(70, 73, 76)">typically up to 10 minutes for IRS&nbsp;and up to 15 or 20 minutes for INS</em>)</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">accuracy of the altitude computed</span><ul><li>decreases exponentially with flight time.</li></ul></div>
+
+<div class="paragraph"><u><strong><font size="4">IRS</font></strong></u><ul><li>IRS: OFF-ALIGN-NAV-ATT</li><li>3 laser gyros and 3 accelerometers. (strapdown inertial system)</li><li>the gyroscopes and accelerometers are part of the unit's <strong>fixture to the aircraft structure</strong>.</li><li>output data:&nbsp;<span style="color:rgb(70, 73, 76); font-weight:600">attitude,true track,present position (lat, long),true heading,GS,drift angle</span></li><li>oriented with:&nbsp;along yaw, longitudinal and lateral axis of the aircraft.</li></ul><ul><li>Has a shorter alignment phase in time.</li><li>Is more reliable in time</li><li>supplied by&nbsp;the electrical system.</li><li>accelerometers and platform are both strapped down.</li><li>accelerations are measured in relation to&nbsp;aircraft axis.</li><li>data that needs to be inserted:<span style="color:rgb(70, 73, 76); font-weight:600">&nbsp;</span>aircraft position in Latitude / Longitude.</li><li>attitude data can be used: auto pilot system.</li><li>alignment time takes longer:&nbsp;at a high latitude.</li><li>insert the local geographical coordinates:&nbsp;compare the latitude it finds with that entered by the operator.</li><li>The aircraft must not be moved during alignment</li><li>IRU (Inertial Reference Unit) measures: accelerations and angular rates.</li><li><span style="color:rgb(70, 73, 76)">Measures the accelerations in a trihedron which is<strong> fixed </strong>regarding to the aircraft trihedron</span></li><li>INS/IRS can be aligned in either the ALIGN or NAV mode.</li><li><span style="color:rgb(70, 73, 76)">ATT Mode:<span style="font-weight:600">&nbsp;</span></span>only attitude and heading information. (same as INS)</li><li>NAV mode must be selected prior to movement of the aircraft off the gate.</li><li>initial position indicated&nbsp;It is not updated once the IRS mode is set to NAV.</li><li><span style="color:rgb(70, 73, 76)">type coordinates: compare the computed <strong>latitude </strong>with the one entered by the pilot</span></li><li><span style="color:rgb(70, 73, 76)">Know the longitude</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Schuler Tuning:&nbsp;</span><ul><li>both gyro-stabilised platform and 'strapdown' systems</li></ul> <span style="color:rgb(70, 73, 76)"><strong>allignment:</strong>&nbsp;</span><ul><li>3 to 10 minutes</li><li>measuring the Earth rotation and local gravitation to position the reference trihedron.&#8203;</li><li>to&nbsp;calculate the computed trihedron with respect to the Earth</li></ul> <strong>ring laser gyro</strong>:<ul><li>&nbsp;a device which measures angular movements</li><li>can measure<span style="color:rgb(70, 73, 76); font-weight:600">&nbsp;</span>a rotation motion / rotation about its sensitive axis.</li><li>There is little or no spin up time and it is insensitive to gravitational (g) forces.</li><li>based on:&nbsp;frequency difference between two laser beams rotating in opposite direction.</li><li>has a longer life cycle.</li><li>is much more cumbersome.&nbsp;(s&uacute;lyos)</li><li>consists of&nbsp;a laser generating two light waves./2 beams of laser light.</li><li>sustained oscillation:<span style="color:rgb(70, 73, 76); font-weight:600">&nbsp;</span>the gas (or plasma) inside the triangular cavity is ionised by the voltage, causing helium atoms to collide with and transfer energy to the neon atoms.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">triple-fit IRS system:&nbsp;</span><ul><li>are likely to differ as the information comes from different sources.&#8203;</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">To obtain the instantaneous position from the accelerations, it is necessary to:</span><ul><li>integrate twice the acceleration in time.</li><li>know the initial position.</li><li>know the initial speed.</li></ul> &#8203;<strong>If the position data (lat, long) is no longer computed an IRS, the affected system(s) is (are) the:</strong><ul><li>FMS</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">lock-in:&nbsp;&nbsp;low input rotation rates</span><ul><li>piezo-electric motor:&nbsp;<strong>Dither </strong>(name of the technique)</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">&nbsp;you note that there is a 10-mile difference between the left IRS and the right IRS positions</span><ul><li>at least one of the IRS is drifting.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">loss of alignment</span><ul><li>The navigation mode, including present position and ground speed outputs, is inoperative for the remainder of the flight.</li></ul> <strong>The elements which take part in the local vertical alignment of an inertial strap-down unit are:</strong><ul><li>the accelerometers.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">alignment sequence of an IRS</span><ul><li>Searching for the local vertical.</li><li>Searching for the true north.</li><li>Searching for the latitude.</li><li>Comparison between the computed latitude and the one entered by the pilot.</li></ul></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<div class="paragraph"><font size="5">&nbsp;022-06 - Aeroplane: <a href="https://www.youtube.com/watch?v=EQ8I3mNHeKE" target="_blank">Automatic Flight Control System</a>s</font></div>
+
+<div class="paragraph"><strong>Autopilot</strong><br /><em><span style="color:rgb(70, 73, 76)">ROLL modes:</span><br /><span style="color:rgb(70, 73, 76)">&bull; Heading Hold</span><br /><span style="color:rgb(70, 73, 76)">&bull; Heading Select</span><br /><span style="color:rgb(70, 73, 76)">&bull; Navigation Track (also called Track Hold)</span><br /><span style="color:rgb(70, 73, 76)">&bull; VOR/LOC Capture</span><br /><span style="color:rgb(70, 73, 76)">&bull; VOR/LOC Track</span><br /><span style="color:rgb(70, 73, 76)">&bull; Lateral Navigation (LNAV)</span><br /><span style="color:rgb(70, 73, 76)">&bull; FMS Lateral Navigation (LNAV)</span><br /><br /><span style="color:rgb(70, 73, 76)">PITCH modes:</span><br /><span style="color:rgb(70, 73, 76)">&bull; Altitude (Select &amp; Hold)</span><br /><span style="color:rgb(70, 73, 76)">&bull; IAS / Mach Hold</span><br /><span style="color:rgb(70, 73, 76)">&bull; Level Change</span><br /><span style="color:rgb(70, 73, 76)">&bull; Altitude Acquire (Capture)</span><br /><span style="color:rgb(70, 73, 76)">&bull; Vertical Speed</span><br /><span style="color:rgb(70, 73, 76)">&bull; Glideslope (Capture &amp; Track)</span><br /><span style="color:rgb(70, 73, 76)">&bull; Vertical Navigation (VNAV)</span><br /><span style="color:rgb(70, 73, 76)">&bull; Flare</span><br /><br /><span style="color:rgb(70, 73, 76)">Combined ROLL and PITCH modes:</span><br /><span style="color:rgb(70, 73, 76)">&bull; Approach</span><br /><span style="color:rgb(70, 73, 76)">&bull; Go-Around</span><br /><span style="color:rgb(70, 73, 76)">&bull; Control Wheel Steering (CWS)</span></em><ul><li><strong>Sensors, Comparators, Computers, Amplifiers, Servo-actuators</strong></li><li>uses data:&nbsp;<span style="color:rgb(70, 73, 76); font-weight:600">Attitude reference system, ADC, Mode control panel</span></li><li>control law:&nbsp;relationship between&nbsp;computer input deviation data and the output control deflection signals.</li><li><span style="color:rgb(70, 73, 76)">Control Wheel Steering (CWS): enables the pilot to roll or pitch the aeroplane using the AFCS (Auto Flight Control System) by using normal control forces on the control column</span></li><li><span style="color:rgb(70, 73, 76)">CWS purpose:&nbsp;</span>to consider as target parameters, the current pitch and roll angles at the time the mode becomes active.</li><li>automatically disengage from the LNAV mode if:&nbsp;HDG SEL is selected.</li><li>the inner loops provide the stability functions and the outer loops provide the guidance functions.</li><li>inner loop control&nbsp;&nbsp;system is one in which: autostabilization is provided about a single axis.</li><li>components&nbsp;:&nbsp;Actuators,&nbsp;Mode control panel, Mode annunciator panel, computer</li><li>input signals from:&nbsp;ADC,&nbsp;Attitude reference System,&nbsp;ILS receiver,&nbsp;Mode control panel.</li><li>automatic synchronisation function:&nbsp;Prevents the aircraft's control system from jerking when <strong>engaging </strong>the autopilot/<span style="color:rgb(70, 73, 76); font-weight:600">&nbsp;</span>smooth 'take-over</li><li>two axis autopilot system: pitch and roll</li><li><span style="color:rgb(70, 73, 76)">autopilot slaved powered control circuit can disengage itself if necessary</span></li><li><span style="color:rgb(70, 73, 76)">GO AROUND mode is engaged:&nbsp;</span>by the pilot pushing a button located on the throttles.</li><li>following a failure of an inner loop component&nbsp;it is fail safe and will disconnect.</li><li>A closed loop control system in which a small power input controls a much larger power output in a strictly proportionate manner is known as:&nbsp;servomechanism</li><li>computer of the autopilot system uses&nbsp;CAS, altitude, vertical speed, heading, attitude.</li></ul> <strong>basic mode</strong><ul><li>stabilizing the aircraft around its centre of gravity.<strong>&#8203;</strong></li><li>auto-stabilisation:&nbsp;Maintain pitch attitude,&nbsp;Maintain wings level</li><li>most basic function:&nbsp;speed along track and wings horizontal.</li></ul> <strong>guidance function</strong><ul><li>controlling the path of the aircraft</li><li><span style="color:rgb(70, 73, 76)">indicated airspeed or Mach number holding,&nbsp;</span><span style="color:rgb(70, 73, 76)">altitude holding,&nbsp;</span><span style="color:rgb(70, 73, 76)">VOR axis holding</span></li><li>monitoring the movements of the centre of gravity in the three dimensions of space.</li></ul> <strong>pitch hold mode</strong><ul><li>attitude reference system</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">stabilization mode</span><ul><li>pitch attitude holding,&nbsp;horizontal wing holding</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">path mode</span><ul><li>VOR axis holding.</li><li>Inertial heading holding.</li><li>IAS and Mach hold</li><li>Altitude hold</li><li><span style="color:rgb(70, 73, 76)">FMS vertical navigation</span></li><li><span style="color:rgb(70, 73, 76)">Flight path angle hold</span></li><li><span style="color:rgb(70, 73, 76)">Glide slope intercept and track</span></li></ul> <strong>command function</strong><ul><li><span style="color:rgb(70, 73, 76)">vertical speed</span></li><li><span style="color:rgb(70, 73, 76)">altitude</span></li><li><span style="color:rgb(70, 73, 76)">heading</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">without selecting a particular mode</span><ul><li>aeroplane stabilization with attitude hold or maintaining vertical speed and possibly automatic trim.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">FMS lateral navigation mode (LNAV)</span><ul><li>the roll or heading command computed by the FMS.</li></ul> <strong>pilot&nbsp;</strong><span style="color:rgb(70, 73, 76); font-weight:600">carries out a manoeuvre in roll autopilot (CWS) on</span><ul><li>the autopilot&nbsp;maintains the flight attitude obtained at that moment.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">The engagement of an autopilot is not possible when:</span><ul><li>1) there is a fault in the electrical power supply.</li><li>2) the controlled-turn knob is not set to neutral position.&nbsp;</li><li>3) there is a synchronization fault in the pitch channel.</li><li>4) there is a fault in the attitude reference unit.</li></ul> <strong>control laws</strong><ul><li>on the longitudinal axis, the law may combine the load factor and the changes in the pitch rate as control data sources</li><li>the trimming is automatic and ensures neutral stability</li><li>the protections apply to pitch and bank attitudes depending on the speed</li></ul> <strong>The interception of a localizer beam by the autopilot takes place:</strong><ul><li>at a constant heading.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">operating in the VOR coupled mode, approaches the cone of confusion over a VOR station, the roll channel of the autopilot</span><ul><li>temporarily maintains a heading.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">When <u>disengaging</u> the autopilot, the function providing a smooth "handover" is the:</span><ul><li>automatic pitch trim function.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">If a go-around is initiated from a single autopilot coupled ILS approach:</span><ul><li>The autothrottle selects GA power as soon as the TOGA switch is pressed</li><li>The pilot carries out the procedure.</li><li>The pilot cleans up (retracts flaps and raises gear)</li></ul><br /><span style="color:rgb(70, 73, 76); font-weight:600">automatic landing system</span><ul><li>&nbsp;semi-automatic landing system&nbsp;disconnects&nbsp;at the decision height.</li><li>actuated by&nbsp;the radio altimeter.</li><li>displayed on&nbsp;the PFD (Primary Flight Display).</li><li><a href="https://www.youtube.com/watch?v=dcNM8kJJ8-0" target="_blank">flight director</a>:&nbsp;bank control,&nbsp;pitch control</li><li>landing is performed automatically:&nbsp;during the landing roll and sometimes until the aircraft comes to a complete stop.</li><li>autoland procedure complete: At the beginning of the ground roll.&nbsp;</li><li><span style="color:rgb(70, 73, 76)">FD command bars indicate the optimum ATTITUDE of the aeroplane to follow the desired flight path - they do not represent the &ldquo;location&rdquo; of the desired flight path</span></li><li>fail-operational flight control system:&nbsp;The system will operate as a fail-passive system/The landing is completed automatically</li><li>Radio Altimeter fails:&nbsp;the RA stops showing the height.</li><li>fail-passive:&nbsp;If, in the event of a failure, there is no significant out-of-trim condition or deviation of flight path or attitude but the landing is not completed automatically, such an automatic landing system</li><li>If the aircraft is above the ILS glide slope, the horizontal command bar:&nbsp;may be centered if the pilot is correcting to come back on to the ILS glide slope.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">AUTOMATIC mode:&nbsp;</span><ul><li>the autopilot maintains the airplane on the ILS beam until the flare.</li><li>the autothrottle decreases the thrust when the height is approximately 30 ft.</li><li>the flare and the ground roll are performed automatically.</li></ul><br /><em><span style="color:rgb(70, 73, 76)">1 autopilot = FAIL&nbsp;PASSIVE</span><br /><span style="color:rgb(70, 73, 76)">2 autopilots for autoland approach = FAIL&nbsp;PASSIVE</span><br /><span style="color:rgb(70, 73, 76)">3 autopilots for autoland approach = FAIL OPERATIONAL</span></em><br />&#8203;<br /><br /></div>
+
+<div class="paragraph"><font size="5">022-08 - Trims - Yaw Damper - Flight Envelope Protection</font><br /></div>
+
+<div class="paragraph"><font size="5">022-09 - Autothrottle - Automatic Thrust Control System</font><br /></div>
+
+<div class="paragraph"><span style="color:rgb(70, 73, 76); font-weight:600">When an automatic thrust control system is in the THRUST mode:</span><ul><li><span style="color:rgb(70, 73, 76); font-weight:600"></span>thrust is set to a computer thrust according to a performance database.&#8203;<span style="color:rgb(70, 73, 76); font-weight:600"></span></li></ul></div>
+
+<div class="paragraph"><span style="color:rgb(23, 24, 26)"><font size="5">022-10 - Communication Systems</font></span></div>
+
+<div class="paragraph"><span style="color:rgb(70, 73, 76); font-weight:600">datalink communications between the aircraft and the ground</span><ul><li>ACARS</li><li>on-board units + ground units.<br /></li><li>D-ATIS:&nbsp;an ATIS message received by datalink.<br /></li><li>ATC clearances:&nbsp;Departure, Oceanic.<span style="color:rgb(70, 73, 76); font-weight:600"></span><br /></li><li>Airline Operational and Air Traffic Communications (AOC &amp; ATC)/Airline Administrative Control (AAC)</li><li>SAT-COM, HF, VHF<br /></li></ul><span style="color:rgb(70, 73, 76); font-weight:600">systems that can be connected to the Communication Management Unit (CMU)</span><ul><li>&#8203;FMS</li><li>Multipurpose Control and Display Unit (MCDU).</li><li>communication unit (VHF, HF, Satcom).</li></ul><span style="color:rgb(70, 73, 76); font-weight:600">slowest to the fastest</span><ul><li><span style="color:rgb(70, 73, 76); font-weight:600"></span>HF datalink, VHF datalink, SATCOM.<span style="color:rgb(70, 73, 76); font-weight:600"></span></li></ul><strong>SATCOM</strong><ul><li><strong>no</strong> line of sight limitation, <strong>no </strong>variable quality of signals disturbed by ionospheric conditions.</li></ul><span style="color:rgb(70, 73, 76); font-weight:600">AOC (Airline Operational Communications) ACARS messages</span><ul><li><span style="color:rgb(70, 73, 76); font-weight:600"></span>OOOI data.<span style="color:rgb(70, 73, 76); font-weight:600"></span></li><li>Weather reports (METAR/TAF).<br /></li><li>Free text messages.<br /></li></ul><span style="color:rgb(70, 73, 76); font-weight:600">FANS</span><ul><li>FANS-A:&nbsp;Satellite based ACARS system.</li><li>Periodic,&nbsp;On demand,&nbsp;On event<br /></li><li><span style="color:rgb(70, 73, 76); font-weight:600"></span><span style="color:rgb(70, 73, 76); font-weight:600">EXPECT CRUISE CLIMB AT (time):&nbsp;</span>a climb instruction should be received to initiate the cruise climb at the specified time.<span style="color:rgb(70, 73, 76); font-weight:600"></span><br /></li><li><span style="color:rgb(70, 73, 76); font-weight:600">AT (position) CLIMB TO (altitude) AND MAINTAIN:&nbsp;</span>CPDLC application.<span style="color:rgb(70, 73, 76); font-weight:600"></span><br /></li><li>MAYDAY datalink: via&nbsp;CPDLC application./the ADS contract is switched to high periodic reporting rate.<span style="color:rgb(70, 73, 76); font-weight:600"></span><br /></li><li>ADS&nbsp;:&nbsp;automatically, without any crew action/surveillance data<br /></li><li>LOG ON:&nbsp;establishing air/ground connection to verify if the datalink communication can be performed./associated datalink capability, prior to operating any datalink communications with ATC.<span style="color:rgb(70, 73, 76); font-weight:600"></span><br /></li><li>CPDLC function:&nbsp;Route modifications,&nbsp;Crossing constraints,&nbsp;Transfer of ATC center,&nbsp;Speed changes, Voice contact request,<br />Emergency messages./transmitting datalink formatted messages between the pilot and ATC controller.</li></ul></div>
+
+<div class="paragraph"><span style="color:rgb(23, 24, 26)"><font size="5">022-11 - Flight Managament Systems (FMS)</font></span></div>
+
+<div class="paragraph"><em><span style="color:rgb(70, 73, 76)"><strong>FMS </strong>can provide these functions:</span><br /><span style="color:rgb(70, 73, 76)">&bull; Aircraft position calculations</span><br /><span style="color:rgb(70, 73, 76)">&bull; Lateral navigation (LNAV)</span><br /><span style="color:rgb(70, 73, 76)">&bull; Vertical navigation (VNAV)</span><br /><span style="color:rgb(70, 73, 76)">&bull; Fuel monitoring and calculations (fuel management)</span></em><br /><strong><a href="https://www.youtube.com/watch?v=SA7s8pYpViM" target="_blank">FMS</a></strong><br /><strong><span style="color:rgb(70, 73, 76)">inputs:&nbsp;</span></strong><ul><li>radio aids</li><li>engine parameters</li><li>air data&nbsp;</li><li>route data</li><li>terminal data</li><li>operating data</li></ul> &nbsp;<ul><li>continuous automatic navigation guidance and performance management.</li><li>Components:&nbsp;<a href="http://www.equicom.net/mcdu/version2.html" target="_blank">CDU&nbsp;</a>FCC&nbsp;FMC x</li><li>radio tuning,&nbsp;fuel management,&nbsp;lateral flight plan management</li><li>global 3-D Flight Management System.</li></ul> <strong>database:</strong><ul><li>aeroplane performance and navigation.</li><li>airports, navaids, runways</li><li>flight-crew entered flight plan data,&nbsp;data from ADC (Air Data Computer),&nbsp;aircraft position, data from the FMC navigation data base.</li><li>navaids,&nbsp;SID, STAR and approaches procedures,&nbsp;waypoints, &nbsp;airways,&nbsp;<span style="color:rgb(70, 73, 76)">magnetic variation</span></li><li>change the data:&nbsp;He cannot. For the pilot the FMS data base is read-only.</li><li>five letter waypoint identifiers:&nbsp;Waypoint names; navaid identifiers; <strong>runway numbers</strong>; airport ICAO identifiers.</li><li>5 alphanumerics:&nbsp;navigation facilities, reporting points and airway designators.</li><li>nav database:&nbsp;28 days.</li><li>fuel flow stored:&nbsp;Performance database.</li><li>Magnetic variation information is stored in each IRS memory; it is applied to the true heading calculated by the respective IRS.</li></ul> <strong><span style="color:rgb(23, 24, 26)">Operations, Limitations</span></strong><br /><span style="color:rgb(70, 73, 76); font-weight:600">with a twin inertial system, the FMC displayed position</span><ul><li>would be between the mean inertial position and radio fix position.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Dead Reckoning mode (DR)</span><ul><li>a back up navigation mode to compute the FMS position when the other navigation sensors are no longer operating.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">most common sensors interfacing a FMS</span><ul><li><span style="color:rgb(70, 73, 76)">DME,&nbsp;GPS</span></li></ul> <span style="color:rgb(70, 73, 76)"><strong>FMC&nbsp;</strong></span><span style="color:rgb(70, 73, 76); font-weight:600">least accurate</span><ul><li>At top of descent.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">no further waypoints</span><ul><li>the FMC would revert automatically to heading mode.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">position error, 95% probability, in a non-precision approach</span><ul><li>0.3 NM</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">An FMC auto-tunes DMEs for fixing purposes and would normally decode and display the Morse identifier. What happens when a decode cannot be achieved?</span><ul><li>The frequency would be displayed instead of the identifier.</li></ul> <span style="color:rgb(70, 73, 76)">"overfly" waypoint =&gt; this tells the FMC&nbsp;that it can not commence any turn before reaching this waypoint - only after this waypoint has been actually overflown may any turn be started.</span><br /><span style="color:rgb(70, 73, 76); font-weight:600">radio updating is not available</span><ul><li>A warning message is displayed on the EHSI and <a href="http://www.equicom.net/mcdu/version2.html" target="_blank">MCDU</a></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">FMS is approved&nbsp;&nbsp;to provide guidance for the following approaches</span><ul><li><span style="color:rgb(70, 73, 76)">RNAV,&nbsp;VOR/DME, VOR,&nbsp;</span><span style="color:rgb(70, 73, 76)">NDB</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">entering a cost index of zero</span><ul><li>maximum range airspeed</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">cost index</span><ul><li>aircraft operating cost by fuel cost.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">The Fuel management performed by most FMS</span><ul><li>a function which helps the crew to estimate the remaining fuel quantity along the flight plan but <strong>should not be considered</strong> as an accurate and reliable source.</li></ul> Aircraft position determined by radio navigation in an FMC is most accurate when derived from:<ul><li>DME / DME.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">FMC position</span><ul><li>computer generated from the IRS and radio navigation positions.&#8203;</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">most common sensors interfacing a FMS to compute the aircraft position</span><ul><li>IRS&nbsp;DME&nbsp;GPS</li></ul> FMS is approved to provide guidance for&nbsp;non-precision approaches.&#8203;<br /><span style="color:rgb(70, 73, 76); font-weight:600">&nbsp;two levels of message produced by the <a href="http://www.equicom.net/mcdu/version2.html" target="_blank">CDU</a></span><ul><li>Alerting and Advisory.&#8203;</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">&nbsp;FMS LEG</span><ul><li>True track,&nbsp;Distance to waypoints</li></ul></div>
+
+<div class="paragraph"><font size="5">&nbsp;022-12 - Alerting Systems, Proximity Systems</font><ul><li><strong>a warning message:&nbsp;</strong><u>immediate recognition</u> and corrective or compensatory action</li><li><strong>caution lights: </strong>amber/<u>immediate crew awareness</u> is required and subsequent crew action will be required.</li><li><strong>an advisory message:&nbsp;</strong><span style="color:rgb(70, 73, 76)">crew awareness is required/&nbsp;</span>any colour except red, and preferably not amber.&#8203;</li><li><strong>an advisory message:&nbsp;</strong><u>crew awareness is required</u> and subsequent crew action may be required.</li><li><span style="color:rgb(70, 73, 76)"><span style="font-weight:600">stick shaker:&nbsp;</span>angle of attack,&nbsp;wing flap deflection</span></li></ul> <strong>An aural warning is given when</strong><ul><li>the parking brake is still ON</li><li>Flaps not in the approved take-off position</li><li>Speedbrake (flight spoilers) not fully stowed</li><li><span style="color:rgb(70, 73, 76)">An aural warning is given when the <font size="3"><strong>stabiliser</strong>&nbsp;(not the elevator)&nbsp;</font>is not in a safe position for take-off</span></li><li><span style="color:rgb(70, 73, 76)">priority:&nbsp;</span>Stall, Windshear, GPWS, TCAS.&nbsp;(hi to low)</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">altitude warning device</span><ul><li><span style="color:rgb(70, 73, 76)">getting close to the preselected altitude, during both climb and descent</span></li><li><span style="color:rgb(70, 73, 76)">a variation higher or lower than a preselected altitude/&nbsp;</span><span style="color:rgb(70, 73, 76)">Excessive deviation from selected altitude</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">required margin related to the stall speed</span><ul><li>5%</li><li>at a speed exceeding the stall speed by not less than 5 kts or 5% CAS.</li></ul> <strong>Stick pusher</strong><ul><li><span style="color:rgb(70, 73, 76)">&nbsp;stall protection system</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">oncoming stall</span><ul><li>control stick vibrations simulating natural buffeting.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">stall warning system</span><ul><li>an angle of attack sensor, computer,&nbsp;&nbsp;a transmitter of the flap/slat position indicating system</li><li>Angle of attack and flaps and slats deflection.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">radio altimeter</span><ul><li>a directional aerial for transmission and another one for reception</li><li><span style="color:rgb(70, 73, 76)">range of a low altitude radio altimeter is&nbsp;</span>2&nbsp;500 ft.</li><li>based on:&nbsp;Frequency modulation of the carrier wave.</li><li>data to: TCAS,&nbsp;GPWS,&nbsp;automatic landing system</li><li>low alt rad alt: centimetric wavelength/SHF (Super High Frequency)/4&nbsp;200 MHz to 4&nbsp;400 MHz.</li><li>hi alt rad alt: decimetric wavelength</li><li>low-altitude radio altimeter:&nbsp;are of the frequency modulation type,&nbsp;have a precision of &plusmn; 2 feet between 0 and 500 ft</li><li>compensate for residual height and cable length.</li><li><span style="color:rgb(70, 73, 76)">system error<span style="font-weight:600">:&nbsp;</span></span>height indication is removed.</li><li>indicates the distance between the ground and the aircraft.</li></ul> <span style="color:rgb(23, 24, 26)"><strong>Ground Proximity Warning Systems (GPWS)</strong></span><ul><li><span style="color:rgb(70, 73, 76)">turboprop-powered,&nbsp;jet-powered: requirement to carry a GPWS</span></li><li>is an enhanced GPWS which has its own world terrain database.</li><li>at least one sound alarm to which a visual alarm can be added.</li><li><span style="color:rgb(70, 73, 76)"><strong>MODE 1 - Excessive Descent Rate</strong>&nbsp;</span><span style="color:rgb(70, 73, 76)">"SINKRATE"&nbsp;"PULL UP"</span></li><li><strong style="color:rgb(70, 73, 76)">MODE 2 - Excessive Terrain Closure&nbsp;</strong>"TERRAIN". (rising terrain)</li><li><strong style="color:rgb(70, 73, 76)">MODE 3 - Height loss after take-off or during a missed approach:&nbsp;&nbsp;</strong><span style="color:rgb(70, 73, 76)">"DON'T SINK":<span style="font-weight:600">&nbsp;</span></span>during take-off or missed approach manoeuvre, the aircraft has started to lose altitude./"DON'T SINK" repetitive only.</li><li><strong style="color:rgb(70, 73, 76)">MODE 4 - Unsafe terrain clearance when not in the landing configuration&nbsp;</strong>"TOO LOW GEAR", "TOO LOW FLAPS", "TOO LOW TERRAIN"</li><li><strong style="color:rgb(70, 73, 76)">MODE 5 - Excessive deviation below the glideslope&nbsp;</strong><span style="color:rgb(70, 73, 76)">"GLIDESLOPE"</span></li><li><strong style="color:rgb(70, 73, 76)">MODE 6 - Callouts + Excessive Bank angle&nbsp;</strong><span style="color:rgb(70, 73, 76)">Approaching Minimums +&nbsp;</span><span style="color:rgb(70, 73, 76)">"BANK&nbsp;ANGLE, BANK ANGLE"</span></li><li><strong style="color:rgb(70, 73, 76)">MODE 7 - Windshear</strong></li><li><span style="color:rgb(70, 73, 76); font-weight:600">Terrain Look-Ahead Alerting function:&nbsp;</span>an electronic map of the world giving ground elevation.</li><li><span style="color:rgb(70, 73, 76); font-weight:600">aircraft position becomes less accurate:&nbsp;</span>the terrain display will diverge from the real terrain environment around the aircraft position. (only this)</li><li><span style="color:rgb(70, 73, 76); font-weight:600">terrain display:&nbsp;</span>green, amber, red, magenta (=purple).</li></ul>SINKRATE TERRAIN HEIGHT LOSS CONFIG GLIDESLOPE BANK WINDSHEAR<br /> <span style="color:rgb(23, 24, 26)"><strong>ACAS / TCAS Principles and Operations</strong></span><ul><li><span style="color:rgb(23, 24, 26)">TCAS II: TX inop: can't work. If only C or S mode inop: only TA (traffic advisory), no RA (</span><span style="color:rgb(70, 73, 76)">Resolution Advisory)</span></li><li><span style="color:rgb(70, 73, 76)">if everything all right:&nbsp;&nbsp;able to negotiate optimum Resolution&nbsp;Advisories (RAs) should a collision threat occur</span></li><li><span style="color:rgb(70, 73, 76); font-weight:600">(RA) when&nbsp;</span>a serious collision threat exists.&#8203;</li><li>valid command:&nbsp;DESCEND, DESCEND.</li><li><span style="color:rgb(70, 73, 76); font-weight:600">preventive&nbsp;</span><strong>RA</strong> advises the pilot to keep the vertical speed within given limits.</li><li><span style="color:rgb(70, 73, 76); font-weight:600">preventive&nbsp;</span><strong>RA</strong>&nbsp;advises the pilot to avoid certain deviations from the current vertical rate but does not require any change to be made to that rate.</li><li><strong style="color:rgb(70, 73, 76)">Corrective RA&nbsp;</strong><span style="color:rgb(70, 73, 76)">Climb, Climb</span></li></ul></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="uploads/1/8/8/8/18889660/published/tcas_1.png?1483886389" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">climbing or descending at a minimum rate of 500 ft/min</div>
+</div></div>
+
+<div class="paragraph"><font size="5">asdf</font><br /><span style="color:rgb(70, 73, 76); font-weight:600">memory</span><ul><li>holds both instructions and data</li><li><span style="color:rgb(70, 73, 76); font-weight:600">two principal varieties:&nbsp;</span>Random Access Memory (RAM) and Read-Only Memory (ROM).</li><li>It is linked to both, the control unit and to the ALU</li></ul> <strong>Multitasking/Multiprocessing&nbsp;</strong><ul><li>Multitasking method is a software solution.</li><li>Multitasking:&nbsp;Multiple tasks share common resources, such as the same central processing unit (CPU).</li><li>Multiprocessing configuration is a hardware solution</li><li>Multiprocessing configuration results in more powerful performance than the multitasking method</li><li>Multiprocessing:&nbsp;Two or more central processing units (CPUs) are used within a single computer.</li></ul><br /><strong>CPU</strong><ul><li><span style="color:rgb(70, 73, 76)">includes&nbsp;</span>an arithmetic and logic unit (ALU) and control unit.</li><li><span style="color:rgb(70, 73, 76)">The central processing unit (CPU) switches rapidly between each program in turn</span></li><li><span style="color:rgb(70, 73, 76); font-weight:600">consists of:</span></li><li>&#8203;an Arithmetic and Logic Unit (ALU)</li><li>a control and timing unit</li><li>registers</li></ul><br /><span style="color:rgb(70, 73, 76); font-weight:600">bus</span><ul><li>transfers data between computer components.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">EPROM</span><ul><li>is a read-only memory&nbsp;</li><li>keeps its content when power supply is cut off</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">RAM</span><ul><li><span style="color:rgb(70, 73, 76)">is a write memory</span></li><li><span style="color:rgb(70, 73, 76)">erases its content when power supply is cut off</span></li><li>&#8203;&#8203;&#8203;Rapid access.</li><li>Read and write access.</li><li>Volatile type.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">basic computer components</span><ul><li><span style="color:rgb(70, 73, 76)">A single separate storage structure</span></li><li><span style="color:rgb(70, 73, 76)">A central processing unit (CPU)</span></li><li>uses&nbsp;A processing unit and a single storage structure to hold both instructions and data</li><li>---</li><li>An arithmetic and logic unit (ALU).</li><li>A control unit.</li><li>A memory.</li><li>Input and output devices.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">on-board computer</span><ul><li><span style="color:rgb(70, 73, 76); font-weight:600">&#8203;</span>resident in a read-only memory (REPROM, EEPROM,&hellip;).</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">output peripheral</span><ul><li>screen unit.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">input peripheral</span><ul><li>keyboard</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">ALU</span><ul><li>It is a digital circuit that performs basic operations.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">control unit</span><ul><li>it controls the flow of data through the processor</li><li>it co-ordinates the activities of the other units with the processor</li><li>It ensures sequencing and co-ordination of operations.</li></ul> <strong>Levels</strong><ul><li><strong>A&nbsp;</strong><span style="color:rgb(70, 73, 76)">catastrophic failure&nbsp;</span><span style="color:rgb(70, 73, 76); font-weight:600">fly-by-wire flight control system</span></li><li><strong>B&nbsp;</strong><span style="color:rgb(70, 73, 76)">hazardous/severe failure</span></li><li><strong>C&nbsp;</strong><span style="color:rgb(70, 73, 76)">major failure</span></li><li><strong>D&nbsp;</strong><span style="color:rgb(70, 73, 76)">minor failure</span></li><li><strong>E&nbsp;</strong><span style="color:rgb(70, 73, 76)">no effect on the aircraft</span></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">ATSU applications</span><ul><li>is certified according to an equipment certification standard (ED-12B, DO178B).</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">electronic documentation on an aircraft is certified under</span><ul><li>EUROCAE</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">operating system used for an on-board documentation (charts and company information</span><ul><li>There are no certification requirements.</li></ul> <strong>the operating system of the FMS is certified at a level equal or lower than the software used for flight controls.</strong><br /><span style="color:rgb(70, 73, 76); font-weight:600">on-board aircraft computers</span><ul><li>RTCA/DO-178B&#8203;</li></ul></div>
+			</div>
+		</div>
+      </div>
+
+	</div>
+</div>
+
+</div>
+
+    </div><!-- end content-wrap -->
+
+    <div class="footer-wrap">
+      <div class="container">
+            <div class="footer">Create a <a target="_top" href="http://www.weebly.com/">free web site</a> with <a target="_top" href="http://www.weebly.com/" title="free web site">Weebly</a></div>
+      </div><!-- end container -->
+    </div><!-- end footer-wrap -->
+  </div>
+
+  <div class="nav mobile-nav"><ul class="wsite-menu-default">
+		<li id="pg867427237238482426" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Maps/Planning
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-897384195455747960"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="x.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			x
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg223211645393958085" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				Planning
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-322463266303559357"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="napi-leacutegteacuter.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Napi l&eacute;gt&eacute;r
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-531421936156234231"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="charts.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Charts
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-269243837972145726"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="id337jaacuteraacutes.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Id&#337;j&aacute;r&aacute;s
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-199870981241859222"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="docs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			docs
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-703911212760669783"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="c150.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			C150
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-937275827355669122"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="c150-motorleaacutellaacutes.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			C150 Motorle&aacute;ll&aacute;s
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-518268039378130722"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="p28.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			P28
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg137907232960682184" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				ATPL
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-777890229582407763"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Air law
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-612148365499184051"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="international-law.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			international law
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-933008125174731187"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="airworthiness.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Airworthiness
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-490534366309278466"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="personal-licencing.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Personal licencing
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-656692680256864312"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="rules-of-the-air.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Rules of the air
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-136673164368177048"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="proc-for-air-navigation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Proc for air navigation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-597115321768110199"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="ats-and-at-management.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			ATS and AT management
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-915527415522521761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Meteorology
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-159693454122956748"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="atmosphere.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Atmosphere
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-466369049991664939"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="wind.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Wind
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-622698772121098529"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="thermodynamics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Thermodynamics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-775657675576070235"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="clouds-and-fog.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Clouds and fog
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-724556565572537421"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="precipitation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Precipitation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-897585982112299900"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="air-masses-and-fronts.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Air masses and fronts
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-437467918144089716"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="pressure-systems.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Pressure systems
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-447743372879942379"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="climatology.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Climatology
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-260982233377245811"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="flight-hazards.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Flight hazards
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-628670345906212108"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="meteorological-informations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Meteorological informations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-586355978103584761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="lawmet.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Law/Met
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-492029960144779090"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="general-nav.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			General nav
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-750555429123266013"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="fplanning--monitoring.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			fplanning & monitoring
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-664084203886962006"
+	class="wsite-menu-subitem-wrap wsite-nav-current"
+	>
+	<a
+				href="instrumentation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Instrumentation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-223469679423429358"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="radio-nav.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Radio nav
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-499189569977120975"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="human-performance-and-limitations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Human performance and limitations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-700872247576515165"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="performance.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Performance
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-898820104287279457"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="operational-procedures.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Operational procedures
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-897975943447235426"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="aerodynamics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Aerodynamics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-860510153222629014"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="021---airframe-systems-electrics-power-plant.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			021 - Airframe, Systems, Electrics, Power Plant
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-110815252827732883"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="mass--balance.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Mass & Balance
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-608809449707034918"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="felvi.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Felvi
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-352234064618678341"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="lot.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			LOT
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg335447514373405440" class="wsite-menu-item-wrap">
+			<a
+						href="a320-flow.html"
+				class="wsite-menu-item"
+				>
+				A320 flow
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-543482231491823787"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="emerg-brief.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Emerg brief
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-139601529765840534"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="go-around.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Go around
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg161039352793297101" class="wsite-menu-item-wrap">
+			<a
+						href="ew.html"
+				class="wsite-menu-item"
+				>
+				EW
+			</a>
+			
+		</li>
+		<li id="pg153095001396538792" class="wsite-menu-item-wrap">
+			<a
+						href="be76.html"
+				class="wsite-menu-item"
+				>
+				Be76
+			</a>
+			
+		</li>
+		<li id="pg247435634188075838" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				TR
+			</a>
+			
+		</li>
+		<li id="pg816667733144839826" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				Procedures
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-227391142337883491"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="airbus-procs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Airbus procs
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-579823370143501815"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="wzz-procs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			WZZ procs
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg726940671199790417" class="wsite-menu-item-wrap">
+			<a
+						href="memory-items.html"
+				class="wsite-menu-item"
+				>
+				Memory Items
+			</a>
+			
+		</li>
+</ul>
+</div>
+
+  <script type="text/javascript" src="files/theme/plugins.js"></script>
+  <script type="text/javascript" src="files/theme/custom.js"></script>
+    <div id="customer-accounts-app"></div>
+    <script src="http://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1234"></script>
+
+		
+	</body>
+</html>

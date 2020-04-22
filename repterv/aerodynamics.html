@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Aerodynamics - Repterv</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1587588390" title="wsite-theme-css" />
+<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-not-footer h2.wsite-content-title a, .wsite-not-footer .paragraph a, .wsite-not-footer blockquote a, #blogTable .blog-sidebar a, #blogTable .blog-comments a, #blogTable .blog-comments-bottom a, #wsite-com-store a, #wsite-com-product-gen a {color:#ae40a5 !important;}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+
+		<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.storeCountry = "HU";
+			_W.storeCurrency = "USD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "516664538863253668";
+			com_userID = "18889660";</script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"867427237238482426","title":"Maps\/Planning","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"223211645393958085","title":"Planning","url":"planning.html","target":"","nav_menu":false,"nonclickable":true},{"id":"137907232960682184","title":"ATPL","url":"atpl.html","target":"","nav_menu":false,"nonclickable":true},{"id":"335447514373405440","title":"A320 flow","url":"a320-flow.html","target":"","nav_menu":false,"nonclickable":false},{"id":"161039352793297101","title":"EW","url":"ew.html","target":"","nav_menu":false,"nonclickable":false},{"id":"153095001396538792","title":"Be76","url":"be76.html","target":"","nav_menu":false,"nonclickable":false},{"id":"247435634188075838","title":"TR","url":"tr.html","target":"","nav_menu":false,"nonclickable":true},{"id":"816667733144839826","title":"Procedures","url":"procedures.html","target":"","nav_menu":false,"nonclickable":true},{"id":"726940671199790417","title":"Memory Items","url":"memory-items.html","target":"","nav_menu":false,"nonclickable":false}],
+			"897975943447235426",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class="no-header-page  wsite-page-aerodynamics wsite-theme-light"><div class="wrapper">
+    <div class="cento-header">
+      <div class="container">
+        <div class="logo"><span class="wsite-logo">
+
+	<a href="">
+	
+	<span id="wsite-title">Repterv</span>
+	
+	</a>
+
+</span></div>
+        <a class="hamburger" aria-label="Menu" href="#"><span></span></a>
+      </div>
+      <div class="nav-wrap">
+        <div class="container">
+          <div class="nav desktop-nav"><ul class="wsite-menu-default">
+		<li id="pg867427237238482426" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Maps/Planning
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-897384195455747960"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="x.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			x
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg223211645393958085" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				Planning
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-322463266303559357"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="napi-leacutegteacuter.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Napi l&eacute;gt&eacute;r
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-531421936156234231"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="charts.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Charts
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-269243837972145726"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="id337jaacuteraacutes.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Id&#337;j&aacute;r&aacute;s
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-199870981241859222"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="docs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			docs
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-703911212760669783"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="c150.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			C150
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-937275827355669122"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="c150-motorleaacutellaacutes.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			C150 Motorle&aacute;ll&aacute;s
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-518268039378130722"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="p28.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			P28
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg137907232960682184" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				ATPL
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-777890229582407763"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Air law
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-612148365499184051"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="international-law.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			international law
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-933008125174731187"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="airworthiness.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Airworthiness
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-490534366309278466"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="personal-licencing.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Personal licencing
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-656692680256864312"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="rules-of-the-air.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Rules of the air
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-136673164368177048"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="proc-for-air-navigation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Proc for air navigation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-597115321768110199"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="ats-and-at-management.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			ATS and AT management
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-915527415522521761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Meteorology
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-159693454122956748"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="atmosphere.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Atmosphere
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-466369049991664939"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="wind.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Wind
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-622698772121098529"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="thermodynamics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Thermodynamics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-775657675576070235"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="clouds-and-fog.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Clouds and fog
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-724556565572537421"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="precipitation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Precipitation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-897585982112299900"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="air-masses-and-fronts.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Air masses and fronts
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-437467918144089716"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="pressure-systems.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Pressure systems
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-447743372879942379"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="climatology.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Climatology
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-260982233377245811"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="flight-hazards.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Flight hazards
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-628670345906212108"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="meteorological-informations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Meteorological informations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-586355978103584761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="lawmet.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Law/Met
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-492029960144779090"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="general-nav.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			General nav
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-750555429123266013"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="fplanning--monitoring.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			fplanning & monitoring
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-664084203886962006"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="instrumentation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Instrumentation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-223469679423429358"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="radio-nav.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Radio nav
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-499189569977120975"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="human-performance-and-limitations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Human performance and limitations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-700872247576515165"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="performance.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Performance
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-898820104287279457"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="operational-procedures.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Operational procedures
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-897975943447235426"
+	class="wsite-menu-subitem-wrap wsite-nav-current"
+	>
+	<a
+				href="aerodynamics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Aerodynamics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-860510153222629014"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="021---airframe-systems-electrics-power-plant.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			021 - Airframe, Systems, Electrics, Power Plant
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-110815252827732883"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="mass--balance.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Mass & Balance
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-608809449707034918"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="felvi.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Felvi
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-352234064618678341"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="lot.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			LOT
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg335447514373405440" class="wsite-menu-item-wrap">
+			<a
+						href="a320-flow.html"
+				class="wsite-menu-item"
+				>
+				A320 flow
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-543482231491823787"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="emerg-brief.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Emerg brief
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-139601529765840534"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="go-around.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Go around
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg161039352793297101" class="wsite-menu-item-wrap">
+			<a
+						href="ew.html"
+				class="wsite-menu-item"
+				>
+				EW
+			</a>
+			
+		</li>
+		<li id="pg153095001396538792" class="wsite-menu-item-wrap">
+			<a
+						href="be76.html"
+				class="wsite-menu-item"
+				>
+				Be76
+			</a>
+			
+		</li>
+		<li id="pg247435634188075838" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				TR
+			</a>
+			
+		</li>
+		<li id="pg816667733144839826" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				Procedures
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-227391142337883491"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="airbus-procs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Airbus procs
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-579823370143501815"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="wzz-procs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			WZZ procs
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg726940671199790417" class="wsite-menu-item-wrap">
+			<a
+						href="memory-items.html"
+				class="wsite-menu-item"
+				>
+				Memory Items
+			</a>
+			
+		</li>
+</ul>
+</div>
+        </div><!-- end .container -->
+      </div><!-- end .nav-wrap -->
+    </div><!-- end .header -->
+
+    <div class="content-wrap">
+      <div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-background-36"  >
+		<div class="wsite-section-content">
+        <div class="container">
+			<div class="wsite-section-elements">
+				<div class="paragraph"><span style="color:rgb(70, 73, 76); font-weight:600">"parabolic polar" curve</span><ul><li>The minimum glide angle and the parasite drag coefficient.&#8203;</li></ul><br /><strong><em>Total Drag</em></strong><em>=</em><em>Parasite Drag</em><em>+</em><em>Induced Drag</em><br /><strong><em>Parasite Drag</em></strong><em>=</em><em>Profile Drag</em><em>+</em><em>Interference Drag</em><br /><strong><em>Profile Drag</em></strong><em>=</em><em>Form Drag</em><em>+Skin Friction Drag</em><br /><br /><span style="color:rgb(70, 73, 76); font-weight:600">Which drag components make up parasite drag?</span><ul><li>1) pressure drag.</li><li>2) friction drag.</li><li>4) interference drag</li></ul><br /><strong>In straight and level flight at a speed of 1.8 VS, the lift coefficient, expressed as a percentage of its maximum (CLMAX), would be:</strong><ul><li>1/1,8^2</li></ul><br />2 k&eacute;rd&eacute;s is van ebb&#337;l<br /><font color="#5fa233">1) The centre of pressure on a straight wing moves aft as the angle of attack approaches and exceeds the critical angle of attack.</font><br /><font color="#a82e2e">2) When sweep back increases the center of pressure has an increased tendency to move aft as the angle of attack approaches and exceeds the critical angle of attack.</font><br /><br /><span style="color:rgb(70, 73, 76)"><strong>stalling speed is: </strong></span><ul><li><span style="color:rgb(70, 73, 76)">100 kts <strong>&divide;!</strong>&nbsp;&radic;cos 45&deg;</span></li><li><span style="color:rgb(70, 73, 76)"><span style="color:rgb(70, 73, 76)">V</span>S1g<span style="color:rgb(70, 73, 76)">&nbsp;&times; &radic;n</span></span></li></ul> <strong>If the aspect ratio of a wing increases whilst all other relevant factors remain constant, the critical angle of attack will:</strong><ul><li><a href="http://repterv.weebly.com/uploads/1/8/8/8/18889660/aspect-ratio-vs-aoa_1_orig.png" target="_blank">decrease</a></li></ul></div>
+
+<div><div class="wsite-image wsite-image-border-medium " style="padding-top:5px;padding-bottom:10px;margin-left:0px;margin-right:10px;text-align:left">
+<a href='uploads/1/8/8/8/18889660/aspect-ratio-vs-aoa_orig.png' rel='lightbox' onclick='if (!lightboxLoaded) return false'>
+<img src="uploads/1/8/8/8/18889660/published/aspect-ratio-vs-aoa.png?1502375479" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div class="paragraph"><span style="color:rgb(70, 73, 76); font-weight:600">swept back wing&nbsp;</span><ul><li>&#8203;Slats outboard / flaps inboard.</li><li>swept wings:&nbsp;<strong>slower&nbsp;</strong>onset of the transonic drag rise&nbsp;and&nbsp;<strong>higher </strong>drag rise and a &nbsp;C<font size="2">D</font>&nbsp;in supersonic flight.</li></ul> <strong>fowler flap</strong><ul><li>moves down and increases the wing area by moving aft when lowered</li></ul> <strong>Vortex generators:</strong><ul><li>transfer energy from the free airflow into the boundary layer.</li><li>reduce boundary layer separation drag when shock waves form.</li></ul> <strong>Slat</strong><ul><li>delays the stall to a higher angle of attack.</li><li>increases the critical angle of attack</li></ul><br /><strong>Upon wing spoiler extension in straight and level flight, if the speed and load factor remain constant:</strong><ul><li>CD&nbsp;increases but CL&nbsp;remains unaffected. <em>(speed remains constant: increase AOA and thrust)</em></li></ul> speed remains constant: increase AOA and thrust<ul><li><a href="http://repterv.weebly.com/uploads/1/8/8/8/18889660/airbrakes_orig.png" target="_blank">the minimum drag speed will reduce.&#8203;</a>&nbsp;<em>(sebess&eacute;ggel cs&ouml;kkent&eacute;ssel jobban cs&ouml;kken az ellen&aacute;ll&aacute;s, kisebb sebess&eacute;gn&eacute;l lesz a min drag)</em></li></ul> Behind the transition point in a boundary layer:<ul><li>the <strong>mean </strong>speed and <strong>friction drag</strong> increase.</li></ul> If ice is present on the leading edge of the wings, it may increase the landing distance due to a higher VTH&nbsp;by as much as:<ul><li>40-50%</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">transonic</span><ul><li>The region around Mach 1.</li></ul> <strong>The relation between the Mach angle (mu) and the corresponding Mach number is:</strong><ul><li>sin mu = 1 / M</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">least energy loss</span><ul><li>just above Mach 1.</li></ul> <strong>If a symmetrical aerofoil is accelerated from subsonic to supersonic speed the centre of lift will move:</strong><ul><li>aft to the mid chord.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Mach trim</span><ul><li>minimize the adverse effects of:&nbsp;changes in the position of centre of pressure.</li><li>Is to maintain the required stick force gradient.</li><li>at transonic Mach numbers the aeroplane demonstrates an unacceptable decrease in longitudinal stick force stability.</li><li>A Mach trimmer corrects the change in stick force stability of a swept wing aeroplane above a certain Mach number.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">tuck under</span><ul><li>is caused by a reduction in the downwash angle at the location of the horizontal stabiliser</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Shock stall</span><ul><li>separation of the boundary layer behind the shock wave.</li><li>Shock stall is a stall due to flow separation caused by a shock wave.</li><li>lift will decrease at the shock stall due to the: separation of the boundary layer at the shock waves.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Mach buffet occurs</span><ul><li>following boundary layer separation due to shock wave formation.</li></ul> <strong>In transonic flight the ailerons will be less effective than in subsonic flight because:</strong><ul><li>aileron deflection only partly affects the pressure distribution around the wing. (a shockwave elott nincs ra hatassal)</li></ul> <strong>When the speed over an aerofoil section increases from subsonic to supersonic, its aerodynamic centre:</strong><ul><li>moves from approximately 25% to about 50% of the chord.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">Buffet Onset Boundary chart</span><ul><li>The values of the Mach number at which <strong>low speed and Mach buffet</strong> occur at different weights and altitudes.</li></ul> <strong>The speed range between high and low speed buffet:</strong><ul><li>increases during a descent at a constant IAS.</li></ul> <strong>1.3g margin</strong><ul><li>a manoeuvre with a load factor of 1.3 will cause buffet onset.</li></ul> <strong>supercritical wing</strong><ul><li>will develop no noticeable shock waves when flying just above M<font size="2">CRIT</font>.</li></ul> <strong>With the CG on the aft limit the control forces required to pitch the aircraft would be:</strong><ul><li>less than with a forward CG. <em>(<span style="color:rgb(70, 73, 76)">smaller elevator deflections are required to achieve the same control effect.</span>)</em></li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">stick force gradient</span><ul><li>the force required to change the load factor of the aircraft a given amount.</li></ul> <strong>phugoid oscillation</strong><ul><li>During a phugoid altitude varies significantly, but during a short period oscillation it remains approximately constant.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">The magnitude of the stick force required to pitch, for an aircraft with manual controls, is determined by:</span><ul><li>the distance the CG is forward of the neutral point.</li></ul> <strong>Positive static lateral stability is the tendency of an aeroplane to:</strong><ul><li>roll to the left in the case of a sideslip (with the aeroplane nose pointing to the left of the incoming flow). <em>slip to the right</em></li></ul> <strong>Which statement is correct for a sideslip condition at constant speed and sideslip angle, where the geometric dihedral of an aeroplane is increased?</strong><ul><li>The required lateral control force <strong>increases</strong>.</li></ul> <strong>With increasing altitude and constant IAS the static lateral stability (i) and the dynamic lateral/directional stability (ii) of an aeroplane with swept back wing will:</strong><ul><li>i) increase; ii) decrease.</li></ul> <strong>With a swept wing aircraft, with an increase in altitude, which of the following statements about lateral stability is correct?</strong><ul><li>Static lateral stability remains the same, dynamic lateral stability decreases.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">When trimmed for zero elevator stick force</span><ul><li>an elevator trim tab causes more drag &nbsp; &nbsp;<em>a stabhoz k&eacute;pest!</em></li></ul> <strong>Which direction from the primary control surface does an <u>elevator adjustable trim tab </u></strong><em>sima trim</em><strong> move when the control surface is moved?</strong><ul><li>Remains fixed for all positions.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">The trim tab</span><ul><li>reduces hinge moment and control surface efficiency.</li></ul> <strong>When a jet transport aeroplane takes off with the CG at the forward limit and the <u>trimmable horizontal stabiliser</u> (THS) is positioned at the maximum allowable nose up position for take-off:</strong><ul><li>rotation will be normal using the normal rotation technique.</li></ul><br /><strong>An aircraft has a mass of 60<span>&nbsp;</span>000 kg and a limiting positive load factor of 2.5 g. VA&nbsp;is calculated as the EAS at which full positive elevator deflection will give the limiting load factor at the stall, and is 237 kts. If the aircraft mass is reduced to 40<span>&nbsp;</span>000 kg by fuel burn, what will be the new VA?</strong><ul><li>sqrt 40000/60000 * 237 &nbsp;</li></ul> <strong>An aircraft is flown at 20% below its normal mass. Because of this, VA&nbsp;will be:</strong><ul><li>1-sqrt 0,8= 10%</li></ul> By what percentage does VA&nbsp;(EAS) change when the aeroplane's mass decreases by 10%?<ul><li>1-sqrt 0.9=5%</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">V</span><font size="2">MO</font><ul><li>should not be <strong>greater </strong>than <strong>V<font size="2">C</font></strong>.</li></ul><br />V<font size="2">A</font><strong><font size="3">&nbsp;</font><font size="4">&gt;=</font></strong> V<font size="2">S</font>&nbsp;&times; &radic;(2.5)<br />VA&nbsp;<strong><font size="4">&gt;=</font></strong> VS&nbsp;&times; &radic;(n)<br />V<font size="2">A new</font>=VA <font size="2">old</font>&radic;(W<font size="2">new</font>/W<font size="2">old</font>)<br />n<font size="2">new</font><font size="3">=(</font>240kts/200kts)^2<br />n<font size="2">new</font>=(120kts new /200kts old)^2<br /><span style="color:rgb(70, 73, 76)">new speed / old speed = (new n - 1g) / (old n - 1g)</span><br /><br />&#8203;<br />Large / transport aircraft &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -1.00 g+2.5 g (+2.0 g with flaps extended)<br />Normal &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -1.52 g+3.8 g<br />Utility &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;-1.76 g+4.4 g &nbsp; &nbsp; &nbsp;&nbsp;<br />Aerobatic &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -3.00 g+6.0 g<br /><br /><span style="color:rgb(70, 73, 76); font-weight:600">turbulence</span><ul><li>least sensitive to turbulance:&nbsp;<a href="http://repterv.weebly.com/uploads/1/8/8/8/18889660/sweptback_orig.png" target="_blank">swept wings</a>.</li></ul> <strong>In <a href="http://repterv.weebly.com/uploads/1/8/8/8/18889660/gust-load-factor_orig.png" target="_blank">gust and manoeuvre load diagrams</a>, the most limiting speed is:</strong><ul><li>V<font size="2">D</font></li></ul> <span style="font-weight:600"><font color="#5fa233">The gust load diagram has a symmetrical shape with respect to the n = 1 line for speeds above V</font></span><strong><font size="2"><font color="#5fa233">B</font></font></strong><br /><strong>gust load factor</strong><ul><li>increases with<ul><li>increasing wing area,</li><li>increasing aspect ratio,</li><li>increasing speed</li><li>decreasing wing load/weight</li><li>decreasing with altitude</li></ul></li><li>the gust limit load factor can be higher than the manoeuvring limit load factor.</li></ul><br /><em>66 ft/sec at VB&nbsp;(66 = higher slope)<br />50 ft/sec at VC&nbsp;(50 = middle slope)<br />25 ft/sec at VD&nbsp;(25 = lower slope)</em><br /><br /><strong>Aileron reversal at high CL&nbsp;results from:</strong><ul><li>the down-going aileron increasing the semi-span angle of attack beyond the critical.&nbsp;<em>&#8203;nagyobb AOA fel&eacute; csavarja a sz&aacute;rnyat, ha rugalmas</em></li></ul><br /><span style="color:rgb(70, 73, 76); font-weight:600"><a href="http://repterv.weebly.com/uploads/1/8/8/8/18889660/fixed-pitch-prop-efficiency_orig.png" target="_blank">fixed pitch propeller with TAS at a given RPM</a><br /><br />The limitation on blade number from an aerodynamic standpoint is:</span><ul><li>the loss of efficiency of one blade if it follows to the path of the preceding blade too closely.</li><li>beyond a certain number:&nbsp;Decreased propeller efficiency.</li></ul> <strong>Increasing the camber on propeller blades will, if all else is the same:</strong><ul><li>increase the power absorption capability.</li></ul><br />&#8203;<strong>Given</strong>:<br />&nbsp;<br /><strong>Aeroplane mass: &nbsp; &nbsp;50<span>&nbsp;</span>000 kg<br />Lift/Drag ratio: &nbsp; &nbsp; &nbsp; 10<br />Thrust per engine: 30<span>&nbsp;</span>000&nbsp;N<br />Assumed g: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 10 m/s2<br />For a straight, steady, wings level climb of a three-engine aeroplane, the all engines climb gradient will be:</strong><ul><li>Thrust/mass - (1/L/D ratio) = 90000/500000-(1/10)= 8%</li></ul> Two identical aeroplanes A and B, with the same mass, are flying steady level co-ordinated 20&deg; bank turns. If the TAS of A is 130 kts and the TAS of B is 200 kts:<ul><li>the rate of turn of A is greater than that of B.</li><li><em>ha rate1 turnt n&eacute;zz&uuml;k 130-al 19 fok AOB, 200-al 27 fok AOB. ha a gyorsabbnak kisebb a bed&ouml;nt&eacute;se (20fok), lassabb a rate of turn is</em></li></ul> <a href="http://repterv.weebly.com/uploads/1/8/8/8/18889660/radius_orig.png" target="_blank">What is the approximate radius of a steady, level, co-ordinated turn with a bank angle of 30&deg; and a TAS of 500 kts?</a><br /><br />If an aeroplane performs a steady co-ordinated horizontal turn at a TAS of 200 kts and a turn radius of 2<span>&nbsp;</span>000 m, the load factor (n) will be approximately:<ul><li>a, v^2/r= 5.3 /9.81= tg AOB AOB=28&deg;</li><li>b,&nbsp;1/cos AOB= n=<strong>1.1</strong></li></ul> <strong>An aeroplane climbs to cruising level with a constant pitch attitude and maximum climb thrust (assume no supercharger). How do the following variables change during the climb? (gamma = flight path angle)</strong><ul><li>gamma decreases, angle of attack increases, IAS decreases.</li></ul> <strong>Min ctrl speeds</strong><ul><li><font color="#6cb83a">1) VMCL&nbsp;is the minimum control speed in the landing configuration.</font></li><li><font color="#6cb83a">2) The speed VMCL&nbsp;can be limited by the available maximum roll rate.</font></li><li><font color="#6cb83a">2) When the bank angle is increased beyond 5&deg;, there is an increasing risk of fin stall.</font></li><li><font color="#6cb83a">2) During&nbsp;VMCG&nbsp;determination, the CG should be on the <u><strong>aft </strong></u>limit.</font><br /><br /></li></ul> <strong><span style="color:rgb(70, 73, 76)">An increased bank angle beyond 5&deg;, while keeping the rudder centered, may lead to a fin stall, due to an extreme sideslip angle, but when decreasing the bank angle below 5&deg; to 0&deg;, rudder deflection has to be increased and therefore V</span>MCA<span style="color:rgb(70, 73, 76)">&nbsp;will increase, too.</span></strong><ul><li><font color="#5fa233">1) As the bank angle is decreased from 5&deg; to 0&deg;, the value of V<font size="2">MCA</font>&nbsp;<strong><u>increases</u></strong>. </font><em>(more rudder)</em></li><li><font color="#c23b3b">2) At any bank angle beyond 5&deg;, V<font size="2">MCA</font>&nbsp;will decrease correspondingly.</font></li></ul> <em><span style="color:rgb(70, 73, 76)">An increased bank angle beyond 5&deg;, while keeping the rudder centered, may lead to a fin stall, due to an extreme sideslip angle, but when decreasing the bank angle below 5&deg; to 0&deg;, rudder deflection has to be increased and therefore V</span>MCA<span style="color:rgb(70, 73, 76)">&nbsp;will increase, too.</span></em><br /><br /><strong>Which statement is correct about a <a href="http://repterv.weebly.com/uploads/1/8/8/8/18889660/spring-tab_orig.png" target="_blank">spring tab</a>?</strong><ul><li>At high IAS it behaves like a servo tab.</li></ul> <a href="http://repterv.weebly.com/uploads/1/8/8/8/18889660/servo-tab_orig.png" target="_blank">Servo tab</a><br /><br /><strong><span style="color:rgb(70, 73, 76)">CG must be always located IN FRONT of the neutral point during all phases of flight</span></strong><br /><br /><strong>The short period oscillation should always be heavily damped.</strong><br /><br /><span style="color:rgb(70, 73, 76); font-weight:600">forward to aft</span><ul><li>CG, neutral point, manoeuvre point.&#8203;</li><br /></ul><span style="color:rgb(70, 73, 76); font-weight:600">1) Stall speeds are determined with the CG at the forward limit.</span><br /><span style="color:rgb(70, 73, 76); font-weight:600">2) Minimum control speeds are determined with the CG at the aft limit.<br />&#8203;</span><br /> <font size="4">FLAPS</font><br /><span style="color:rgb(70, 73, 76); font-weight:600">swept back wing with leading edge flaps and leading edge slats</span><ul><li>Slats outboard / flaps inboard.&#8203;</li></ul></div>
+
+<div><div style="height: 20px; overflow: hidden;"></div>
+				<div id='778553336559185777-gallery' class='imageGallery' style='line-height: 0px; padding: 0; margin: 0'>
+<div id='778553336559185777-imageContainer0' style='float:left;width:33.28%;margin:0;'><div id='778553336559185777-insideImageContainer0' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/8/8/8/18889660/airbrakes_orig.png' rel='lightbox[gallery778553336559185777]'><img src='uploads/1/8/8/8/18889660/airbrakes.png' class='galleryImage' _width='400' _height='389' style='position:absolute;border:0;width:100%;top:-14.83%;left:0%' /></a></div></div></div></div><div id='778553336559185777-imageContainer1' style='float:left;width:33.28%;margin:0;'><div id='778553336559185777-insideImageContainer1' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/8/8/8/18889660/aspect-ratio-vs-aoa_1_orig.png' rel='lightbox[gallery778553336559185777]'><img src='uploads/1/8/8/8/18889660/aspect-ratio-vs-aoa_1.png' class='galleryImage' _width='400' _height='281' style='position:absolute;border:0;width:106.76%;top:0%;left:-3.38%' /></a></div></div></div></div><div id='778553336559185777-imageContainer2' style='float:left;width:33.28%;margin:0;'><div id='778553336559185777-insideImageContainer2' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/8/8/8/18889660/flaps-slats_orig.png' rel='lightbox[gallery778553336559185777]'><img src='uploads/1/8/8/8/18889660/flaps-slats.png' class='galleryImage' _width='400' _height='332' style='position:absolute;border:0;width:100%;top:-5.33%;left:0%' /></a></div></div></div></div><div id='778553336559185777-imageContainer3' style='float:left;width:33.28%;margin:0;'><div id='778553336559185777-insideImageContainer3' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/8/8/8/18889660/flaps_4_orig.png' rel='lightbox[gallery778553336559185777]'><img src='uploads/1/8/8/8/18889660/flaps_4.png' class='galleryImage' _width='400' _height='167' style='position:absolute;border:0;width:179.64%;top:0%;left:-39.82%' /></a></div></div></div></div><div id='778553336559185777-imageContainer4' style='float:left;width:33.28%;margin:0;'><div id='778553336559185777-insideImageContainer4' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/8/8/8/18889660/sweptback_orig.png' rel='lightbox[gallery778553336559185777]'><img src='uploads/1/8/8/8/18889660/sweptback.png' class='galleryImage' _width='400' _height='277' style='position:absolute;border:0;width:108.3%;top:0%;left:-4.15%' /></a></div></div></div></div><div id='778553336559185777-imageContainer5' style='float:left;width:33.28%;margin:0;'><div id='778553336559185777-insideImageContainer5' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/8/8/8/18889660/gust-load-factor_orig.png' rel='lightbox[gallery778553336559185777]' title='All gust lines in the gust load diagram originate from: speed = 0, load factor = +1.	
+'><img src='uploads/1/8/8/8/18889660/gust-load-factor.png' class='galleryImage' _width='400' _height='319' style='position:absolute;border:0;width:100%;top:-3.17%;left:0%' /></a></div></div></div></div><div id='778553336559185777-imageContainer6' style='float:left;width:33.28%;margin:0;'><div id='778553336559185777-insideImageContainer6' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/8/8/8/18889660/fixed-pitch-prop-efficiency_orig.png' rel='lightbox[gallery778553336559185777]'><img src='uploads/1/8/8/8/18889660/fixed-pitch-prop-efficiency.png' class='galleryImage' _width='400' _height='507' style='position:absolute;border:0;width:100%;top:-34.5%;left:0%' /></a></div></div></div></div><div id='778553336559185777-imageContainer7' style='float:left;width:33.28%;margin:0;'><div id='778553336559185777-insideImageContainer7' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/8/8/8/18889660/radius_orig.png' rel='lightbox[gallery778553336559185777]'><img src='uploads/1/8/8/8/18889660/radius.png' class='galleryImage' _width='400' _height='225' style='position:absolute;border:0;width:133.33%;top:0%;left:-16.67%' /></a></div></div></div></div><div id='778553336559185777-imageContainer8' style='float:left;width:33.28%;margin:0;'><div id='778553336559185777-insideImageContainer8' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/8/8/8/18889660/values-of-drag-and-cd_1_orig.png' rel='lightbox[gallery778553336559185777]'><img src='uploads/1/8/8/8/18889660/values-of-drag-and-cd_1.png' class='galleryImage' _width='400' _height='509' style='position:absolute;border:0;width:100%;top:-34.83%;left:0%' /></a></div></div></div></div><div id='778553336559185777-imageContainer9' style='float:left;width:33.28%;margin:0;'><div id='778553336559185777-insideImageContainer9' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/8/8/8/18889660/spring-tab_orig.png' rel='lightbox[gallery778553336559185777]'><img src='uploads/1/8/8/8/18889660/spring-tab.png' class='galleryImage' _width='400' _height='194' style='position:absolute;border:0;width:154.64%;top:0%;left:-27.32%' /></a></div></div></div></div><div id='778553336559185777-imageContainer10' style='float:left;width:33.28%;margin:0;'><div id='778553336559185777-insideImageContainer10' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/8/8/8/18889660/servo-tab_orig.png' rel='lightbox[gallery778553336559185777]'><img src='uploads/1/8/8/8/18889660/servo-tab.png' class='galleryImage' _width='400' _height='146' style='position:absolute;border:0;width:205.48%;top:0%;left:-52.74%' /></a></div></div></div></div><div id='778553336559185777-imageContainer11' style='float:left;width:33.28%;margin:0;'><div id='778553336559185777-insideImageContainer11' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='uploads/1/8/8/8/18889660/shock-waves_orig.jpg' rel='lightbox[gallery778553336559185777]'><img src='uploads/1/8/8/8/18889660/shock-waves.jpg' class='galleryImage' _width='400' _height='300' style='position:absolute;border:0;width:100%;top:-0%;left:0%' /></a></div></div></div></div><span style='display: block; clear: both; height: 0px; overflow: hidden;'></span>
+</div>
+
+				<div style="height: 20px; overflow: hidden;"></div></div>
+			</div>
+		</div>
+      </div>
+
+	</div>
+</div>
+
+</div>
+
+    </div><!-- end content-wrap -->
+
+    <div class="footer-wrap">
+      <div class="container">
+            <div class="footer">Create a <a target="_top" href="http://www.weebly.com/">free web site</a> with <a target="_top" href="http://www.weebly.com/" title="free web site">Weebly</a></div>
+      </div><!-- end container -->
+    </div><!-- end footer-wrap -->
+  </div>
+
+  <div class="nav mobile-nav"><ul class="wsite-menu-default">
+		<li id="pg867427237238482426" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Maps/Planning
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-897384195455747960"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="x.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			x
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg223211645393958085" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				Planning
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-322463266303559357"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="napi-leacutegteacuter.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Napi l&eacute;gt&eacute;r
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-531421936156234231"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="charts.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Charts
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-269243837972145726"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="id337jaacuteraacutes.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Id&#337;j&aacute;r&aacute;s
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-199870981241859222"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="docs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			docs
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-703911212760669783"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="c150.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			C150
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-937275827355669122"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="c150-motorleaacutellaacutes.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			C150 Motorle&aacute;ll&aacute;s
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-518268039378130722"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="p28.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			P28
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg137907232960682184" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				ATPL
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-777890229582407763"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Air law
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-612148365499184051"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="international-law.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			international law
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-933008125174731187"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="airworthiness.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Airworthiness
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-490534366309278466"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="personal-licencing.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Personal licencing
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-656692680256864312"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="rules-of-the-air.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Rules of the air
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-136673164368177048"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="proc-for-air-navigation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Proc for air navigation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-597115321768110199"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="ats-and-at-management.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			ATS and AT management
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-915527415522521761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Meteorology
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-159693454122956748"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="atmosphere.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Atmosphere
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-466369049991664939"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="wind.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Wind
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-622698772121098529"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="thermodynamics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Thermodynamics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-775657675576070235"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="clouds-and-fog.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Clouds and fog
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-724556565572537421"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="precipitation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Precipitation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-897585982112299900"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="air-masses-and-fronts.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Air masses and fronts
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-437467918144089716"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="pressure-systems.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Pressure systems
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-447743372879942379"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="climatology.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Climatology
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-260982233377245811"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="flight-hazards.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Flight hazards
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-628670345906212108"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="meteorological-informations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Meteorological informations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-586355978103584761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="lawmet.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Law/Met
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-492029960144779090"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="general-nav.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			General nav
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-750555429123266013"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="fplanning--monitoring.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			fplanning & monitoring
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-664084203886962006"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="instrumentation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Instrumentation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-223469679423429358"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="radio-nav.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Radio nav
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-499189569977120975"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="human-performance-and-limitations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Human performance and limitations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-700872247576515165"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="performance.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Performance
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-898820104287279457"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="operational-procedures.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Operational procedures
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-897975943447235426"
+	class="wsite-menu-subitem-wrap wsite-nav-current"
+	>
+	<a
+				href="aerodynamics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Aerodynamics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-860510153222629014"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="021---airframe-systems-electrics-power-plant.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			021 - Airframe, Systems, Electrics, Power Plant
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-110815252827732883"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="mass--balance.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Mass & Balance
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-608809449707034918"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="felvi.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Felvi
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-352234064618678341"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="lot.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			LOT
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg335447514373405440" class="wsite-menu-item-wrap">
+			<a
+						href="a320-flow.html"
+				class="wsite-menu-item"
+				>
+				A320 flow
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-543482231491823787"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="emerg-brief.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Emerg brief
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-139601529765840534"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="go-around.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Go around
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg161039352793297101" class="wsite-menu-item-wrap">
+			<a
+						href="ew.html"
+				class="wsite-menu-item"
+				>
+				EW
+			</a>
+			
+		</li>
+		<li id="pg153095001396538792" class="wsite-menu-item-wrap">
+			<a
+						href="be76.html"
+				class="wsite-menu-item"
+				>
+				Be76
+			</a>
+			
+		</li>
+		<li id="pg247435634188075838" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				TR
+			</a>
+			
+		</li>
+		<li id="pg816667733144839826" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				Procedures
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-227391142337883491"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="airbus-procs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Airbus procs
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-579823370143501815"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="wzz-procs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			WZZ procs
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg726940671199790417" class="wsite-menu-item-wrap">
+			<a
+						href="memory-items.html"
+				class="wsite-menu-item"
+				>
+				Memory Items
+			</a>
+			
+		</li>
+</ul>
+</div>
+
+  <script type="text/javascript" src="files/theme/plugins.js"></script>
+  <script type="text/javascript" src="files/theme/custom.js"></script>
+    <div id="customer-accounts-app"></div>
+    <script src="http://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1234"></script>
+
+		
+	</body>
+</html>

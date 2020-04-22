@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Performance - Repterv</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/social-icons.css?buildtime=1234" media="screen,projection" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1587588390" title="wsite-theme-css" />
+<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-not-footer h2.wsite-content-title a, .wsite-not-footer .paragraph a, .wsite-not-footer blockquote a, #blogTable .blog-sidebar a, #blogTable .blog-comments a, #blogTable .blog-comments-bottom a, #wsite-com-store a, #wsite-com-product-gen a {color:#ae40a5 !important;}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+
+		<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.storeCountry = "HU";
+			_W.storeCurrency = "USD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "516664538863253668";
+			com_userID = "18889660";</script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"867427237238482426","title":"Maps\/Planning","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"223211645393958085","title":"Planning","url":"planning.html","target":"","nav_menu":false,"nonclickable":true},{"id":"137907232960682184","title":"ATPL","url":"atpl.html","target":"","nav_menu":false,"nonclickable":true},{"id":"335447514373405440","title":"A320 flow","url":"a320-flow.html","target":"","nav_menu":false,"nonclickable":false},{"id":"161039352793297101","title":"EW","url":"ew.html","target":"","nav_menu":false,"nonclickable":false},{"id":"153095001396538792","title":"Be76","url":"be76.html","target":"","nav_menu":false,"nonclickable":false},{"id":"247435634188075838","title":"TR","url":"tr.html","target":"","nav_menu":false,"nonclickable":true},{"id":"816667733144839826","title":"Procedures","url":"procedures.html","target":"","nav_menu":false,"nonclickable":true},{"id":"726940671199790417","title":"Memory Items","url":"memory-items.html","target":"","nav_menu":false,"nonclickable":false}],
+			"700872247576515165",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class="no-header-page  wsite-page-performance wsite-theme-light"><div class="wrapper">
+    <div class="cento-header">
+      <div class="container">
+        <div class="logo"><span class="wsite-logo">
+
+	<a href="">
+	
+	<span id="wsite-title">Repterv</span>
+	
+	</a>
+
+</span></div>
+        <a class="hamburger" aria-label="Menu" href="#"><span></span></a>
+      </div>
+      <div class="nav-wrap">
+        <div class="container">
+          <div class="nav desktop-nav"><ul class="wsite-menu-default">
+		<li id="pg867427237238482426" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Maps/Planning
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-897384195455747960"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="x.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			x
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg223211645393958085" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				Planning
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-322463266303559357"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="napi-leacutegteacuter.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Napi l&eacute;gt&eacute;r
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-531421936156234231"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="charts.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Charts
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-269243837972145726"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="id337jaacuteraacutes.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Id&#337;j&aacute;r&aacute;s
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-199870981241859222"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="docs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			docs
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-703911212760669783"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="c150.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			C150
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-937275827355669122"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="c150-motorleaacutellaacutes.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			C150 Motorle&aacute;ll&aacute;s
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-518268039378130722"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="p28.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			P28
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg137907232960682184" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				ATPL
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-777890229582407763"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Air law
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-612148365499184051"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="international-law.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			international law
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-933008125174731187"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="airworthiness.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Airworthiness
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-490534366309278466"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="personal-licencing.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Personal licencing
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-656692680256864312"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="rules-of-the-air.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Rules of the air
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-136673164368177048"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="proc-for-air-navigation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Proc for air navigation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-597115321768110199"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="ats-and-at-management.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			ATS and AT management
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-915527415522521761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Meteorology
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-159693454122956748"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="atmosphere.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Atmosphere
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-466369049991664939"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="wind.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Wind
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-622698772121098529"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="thermodynamics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Thermodynamics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-775657675576070235"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="clouds-and-fog.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Clouds and fog
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-724556565572537421"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="precipitation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Precipitation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-897585982112299900"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="air-masses-and-fronts.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Air masses and fronts
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-437467918144089716"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="pressure-systems.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Pressure systems
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-447743372879942379"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="climatology.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Climatology
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-260982233377245811"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="flight-hazards.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Flight hazards
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-628670345906212108"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="meteorological-informations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Meteorological informations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-586355978103584761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="lawmet.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Law/Met
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-492029960144779090"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="general-nav.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			General nav
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-750555429123266013"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="fplanning--monitoring.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			fplanning & monitoring
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-664084203886962006"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="instrumentation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Instrumentation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-223469679423429358"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="radio-nav.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Radio nav
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-499189569977120975"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="human-performance-and-limitations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Human performance and limitations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-700872247576515165"
+	class="wsite-menu-subitem-wrap wsite-nav-current"
+	>
+	<a
+				href="performance.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Performance
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-898820104287279457"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="operational-procedures.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Operational procedures
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-897975943447235426"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="aerodynamics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Aerodynamics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-860510153222629014"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="021---airframe-systems-electrics-power-plant.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			021 - Airframe, Systems, Electrics, Power Plant
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-110815252827732883"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="mass--balance.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Mass & Balance
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-608809449707034918"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="felvi.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Felvi
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-352234064618678341"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="lot.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			LOT
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg335447514373405440" class="wsite-menu-item-wrap">
+			<a
+						href="a320-flow.html"
+				class="wsite-menu-item"
+				>
+				A320 flow
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-543482231491823787"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="emerg-brief.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Emerg brief
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-139601529765840534"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="go-around.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Go around
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg161039352793297101" class="wsite-menu-item-wrap">
+			<a
+						href="ew.html"
+				class="wsite-menu-item"
+				>
+				EW
+			</a>
+			
+		</li>
+		<li id="pg153095001396538792" class="wsite-menu-item-wrap">
+			<a
+						href="be76.html"
+				class="wsite-menu-item"
+				>
+				Be76
+			</a>
+			
+		</li>
+		<li id="pg247435634188075838" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				TR
+			</a>
+			
+		</li>
+		<li id="pg816667733144839826" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				Procedures
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-227391142337883491"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="airbus-procs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Airbus procs
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-579823370143501815"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="wzz-procs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			WZZ procs
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg726940671199790417" class="wsite-menu-item-wrap">
+			<a
+						href="memory-items.html"
+				class="wsite-menu-item"
+				>
+				Memory Items
+			</a>
+			
+		</li>
+</ul>
+</div>
+        </div><!-- end .container -->
+      </div><!-- end .nav-wrap -->
+    </div><!-- end .header -->
+
+    <div class="content-wrap">
+      <div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div class="wsite-section-wrap">
+	<div class="wsite-section wsite-body-section wsite-background-34"  >
+		<div class="wsite-section-content">
+        <div class="container">
+			<div class="wsite-section-elements">
+				<div class="paragraph"><strong><span style="color:rgb(70, 73, 76)">Clearway</span></strong><ul><li>An area beyond the runway not less than 152 m wide under the control of airport authorities.</li></ul> <em><span style="color:rgb(70, 73, 76)">CLEARWAY = a defined rectangular area on the ground or water under the control of the appropriate authority, selected or prepared as a suitable area over which an aeroplane may make a portion of its initial climb to a specified height.</span><br /><br /><span style="color:rgb(70, 73, 76)">STOPWAY = a defined rectangular area on the ground at the end of take-off run available prepared as a suitable area in which an aircraft can be stopped in the case of an abandoned take-off.</span></em><br /><br /><strong>The absolute ceiling:</strong><ul><li>is the altitude at which the maximum rate of climb is zero.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">service ceiling</span><ul><li>the altitude where a low specific rate of climb is achieved.</li><li>the altitude which at maximum power the rate of climb of an aircraft has fallen to 100 ft per minute.</li></ul> <strong style="color:rgb(70, 73, 76)">Gross Performance&nbsp;</strong><ul><li><span style="color:rgb(70, 73, 76)">The average performance that a fleet of aircraft should achieve if satisfactorily maintained and flown in accordance with the techniques described in the Flight Manual.</span></li></ul> &#8203;<br /><strong style="color:rgb(70, 73, 76)">Net Performance&nbsp;</strong><span style="color:rgb(70, 73, 76)">= Gross performance diminished by certain value to allow for various contingencies that cannot be accounted for operationally, for example variations in piloting technique or temporary below average performance. It is improbable that the net performance will not be achieved in operation, provided the aircraft is flown in accordance with the recommended techniques.</span><br /><br /><strong style="color:rgb(70, 73, 76)">Gross Flight Path (GFP)</strong><span style="color:rgb(70, 73, 76)">&nbsp;= The profile path of an aeroplane after it has reached the end of the take-off distance. The GFP is plotted using the gross performance data, and ends at the same horizontal distance from the point of take-off as does the NFP. It starts at the screen height and at any specific distance will always be above the NFP.</span><br /><br /><strong style="color:rgb(70, 73, 76)">Net Flight Path (NFP)&nbsp;</strong><span style="color:rgb(70, 73, 76)">= The profile path of an aeroplane from the end of the take-off distance until it reaches 1</span><span style="color:rgb(70, 73, 76)">&nbsp;500 feet net height above reference zero. It is plotted using the net performance data.<br /><br /><em>TORA = Take-off Run Available</em></span><br /><em><span style="color:rgb(70, 73, 76)">TODA = Take-off Distance Available (TORA + Clearway)</span><br /><span style="color:rgb(70, 73, 76)">ASDA = Accelerate Stop Distance Available (TORA + Stopway)</span></em><br /><span style="color:rgb(70, 73, 76)"><em>LDA = Landing Distance Available (TORA - Displaced threshold)</em><br /><br /><strong>Climb gradient</strong></span><ul><li>Climb Gradient = ((Thrust - Drag) &divide; Weight (N)) &times; 100</li><li>height gained over distance traveled through the air</li></ul> <strong style="color:rgb(70, 73, 76)">rate of climb&nbsp;</strong><span style="color:rgb(70, 73, 76)">(ROC)&nbsp;</span><ul><li>vario</li><li><span style="color:rgb(70, 73, 76)">ROC Rate of Climb (ft/min) = TAS (kts) &times; Gradient (%) = 100 &times; 3.3 = 330 ft/min.</span></li></ul> <span style="color:rgb(70, 73, 76)"><strong>Descend gradient</strong></span><ul><li>tg descend angle = (%)</li></ul> <strong>Rate of descend</strong><ul><li>TAS*sikl&oacute;sz&ouml;g*100/60</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">specific range (jet airplane) is</span><ul><li>the number of miles per unit of fuel (e.g. NM per kg of fuel).</li></ul> <strong>specific fuel consumption</strong><ul><li>&#8203;Fuel flow per unit of thrust.</li></ul> <strong style="color:rgb(70, 73, 76)">Summary - with altitude increase:</strong><ul><li><span style="color:rgb(70, 73, 76)">V</span>X<span style="color:rgb(70, 73, 76)">&nbsp;is the same (IAS); increases in terms of TAS</span></li><li><span style="color:rgb(70, 73, 76)">V</span>Y<span style="color:rgb(70, 73, 76)">&nbsp;decreases (IAS); but increases in terms of TAS</span></li></ul> <span style="color:rgb(70, 73, 76)">Both the climb gradient and the rate of climb decrease.</span><br /><br /><strong>Centre of Gravity</strong><ul><li><strong>forward</strong><ul><li><strong>&#8203;</strong>Fuel consumption increases&nbsp;-&gt; horizontal stab produces more lift down to pitch up the nose requires more lift</li><li>stability increases&nbsp;</li></ul></li><li><strong>aft</strong><ul><li><strong>&#8203;</strong>improves the maximum range.&#8203;<br /></li></ul></li></ul></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a href='uploads/1/8/8/8/18889660/edited/glide.png' rel='lightbox' onclick='if (!lightboxLoaded) return false'>
+<img src="uploads/1/8/8/8/18889660/edited/glide.png?1495738756" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">Glide</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a href='uploads/1/8/8/8/18889660/jett_orig.png' rel='lightbox' onclick='if (!lightboxLoaded) return false'>
+<img src="uploads/1/8/8/8/18889660/jett_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">JET</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a href='uploads/1/8/8/8/18889660/jet_orig.png' rel='lightbox' onclick='if (!lightboxLoaded) return false'>
+<img src="uploads/1/8/8/8/18889660/jet_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a href='uploads/1/8/8/8/18889660/edited/dragtrust-power-req_1.png' rel='lightbox' onclick='if (!lightboxLoaded) return false'>
+<img src="uploads/1/8/8/8/18889660/published/dragtrust-power-req_1.png?1496067941" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">PROP</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="uploads/1/8/8/8/18889660/editor/increasing-alt.png?1495739845" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">increasing altitude and/or mass</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a href='uploads/1/8/8/8/18889660/power-available-power-required_orig.png' rel='lightbox' onclick='if (!lightboxLoaded) return false'>
+<img src="uploads/1/8/8/8/18889660/power-available-power-required_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a href='uploads/1/8/8/8/18889660/mass-to-vy_orig.png' rel='lightbox' onclick='if (!lightboxLoaded) return false'>
+<img src="uploads/1/8/8/8/18889660/mass-to-vy_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a href='uploads/1/8/8/8/18889660/vx-vy-se_orig.png' rel='lightbox' onclick='if (!lightboxLoaded) return false'>
+<img src="uploads/1/8/8/8/18889660/vx-vy-se_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">Vxse > Vx and Vyse < Vy	
+</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a href='uploads/1/8/8/8/18889660/decreasing-mass_orig.png' rel='lightbox' onclick='if (!lightboxLoaded) return false'>
+<img src="uploads/1/8/8/8/18889660/decreasing-mass_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">decreasing mass</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="uploads/1/8/8/8/18889660/penaud_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">unaccelerated level flight</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/8/8/8/18889660/vx-vy_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a href='uploads/1/8/8/8/18889660/flaps_3_orig.png' rel='lightbox' onclick='if (!lightboxLoaded) return false'>
+<img src="uploads/1/8/8/8/18889660/flaps_3_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">Flaps</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/8/8/8/18889660/published/lda-tora-asda-toda.png?1495734131" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div class="paragraph"><strong>min speed on approach</strong><ul><li><span style="color:rgb(70, 73, 76)">The aircraft has to maintain a speed of at least 1.3 x V</span>Stall (Vs)</li></ul> <strong>Vs</strong><ul><li>stalling speed or minimum steady flight speed at which the aeroplane is controllable.</li></ul> <strong>V<font size="2">REF</font>&nbsp;for a Class B aircraft is defined by:</strong><ul><li>1.3 <font size="3">V</font><font size="2">SO</font></li><li><font size="3">30% above stall speed<br /></font></li></ul> <strong>Take off distance</strong><ul><li>dry grass 1,2</li><li>wet grass 1.3</li><li>wet pavement 1.0</li><li>taking-off on a runway with 1 % upslope: 1.05 (5% for 1 deg)&nbsp;</li></ul> <strong>Landing distance</strong><ul><li>short grass 1.15</li><li>wet rwy 1.15</li><li><em>"The landing distance, from a screen height of 50 ft, must not exceed 70 % of the landing distance available = a factor of <strong>1.43</strong>."</em>&nbsp;here, landing distance <strong>required</strong></li><li>wet snow: ldg distance <strong>increased</strong></li></ul> <strong>&#8203;</strong></div>
+
+<div class="paragraph"><font size="4"><span style="color:rgb(23, 24, 26)"><strong>032-04 - Performance Class A: Aeroplanes Certificated Under CS25 Only</strong></span></font><br /><strong>Class A</strong><ul><li>take-off distance,&nbsp;dry runway with all engines operating: <strong>1,15</strong></li></ul> <strong>V<font size="2">SR</font>&nbsp;&nbsp;Reference stalling speed</strong><ul><li>as reference stall speed and may not be less than 1-g stall speed.</li></ul> &#8203;<strong>V<font size="2">REF&nbsp;</font></strong><span style="color:rgb(70, 73, 76); font-weight:600">reference landing speed</span><ul><li>1,23 V<font size="2">SR0 </font><font size="3">(cat A)</font></li><li>1.23 V<font size="2">SRO</font>&nbsp;and must be maintained down to 50 ft height.</li></ul> <strong>V<font size="2">1</font>&nbsp;decision speed</strong><ul><li>increasing mass increases V<font size="2">1</font></li><li>increasing the flap angle, decreases V<font size="2">1</font></li><li>as density falls, V<font size="2">1</font> increases</li><li>tailwinds reduce V<font size="2">1</font>, and &nbsp;headwinds increase V<font size="2">1</font></li><li>downward sloping runway&nbsp;V<font size="2">1</font>&nbsp;will decrease.</li><li>V<font size="2">1</font>&nbsp;is not allowed to be greater than V<font size="2">R</font>.</li><li>slush thickness:&nbsp;Smaller reduction if thicker.</li><li>minimum and maximum values of V<font size="2">1</font>:&nbsp;V<font size="2">MCG</font>, V<font size="2">R</font>.</li><li>V<font size="2">1&nbsp;</font>has to be&nbsp;equal to or higher than <strong>V<font size="2">MCG</font></strong>.</li></ul> <strong>V<font size="2">MC</font> &nbsp;Minimum control speed with the critical power unit inoperative</strong><br /><strong>V<font size="2">MCG</font> - Ground Minimum Control Speed</strong><ul><li>V<font size="2">MCG</font>&nbsp;is determined during flight testing using aerodynamic controls:&nbsp;<strong>no </strong>nosewheel steering and <strong>no </strong>crosswind.</li><li>primary aerodynamic control only.</li></ul> <strong>V<font size="2">MU</font> - Minimum Un-stick Speed<br />V<font size="2">LOF</font> - Lift-off Speed</strong><ul><li>The "maximum tire speed" limits:&nbsp;<strong>V<font size="2">LOF</font>&nbsp;</strong></li></ul> <strong>V<font size="2">R </font>- Rotation Speed</strong><ul><li>increasing mass increases V<font size="2">R</font></li><li>VR&nbsp;must not be less than 1.05 V<font size="2">MCA</font>&nbsp;and not less than V<font size="2">1</font>.</li><li>VR&nbsp;is the speed at which the pilot should start to rotate the aeroplane.</li><li>min&nbsp;<span style="color:rgb(70, 73, 76)">1.05 V</span>MCA</li></ul> <strong>V<font size="2">MCA&nbsp;</font></strong><ul><li>Staight flight can not be maintained below V<font size="2">MCA</font>, when the critical engine has failed.</li><li>V<font size="2">MCA</font>&nbsp;decreases with increasing pressure altitude. (kisebb nyomat&eacute;k a j&aacute;r&oacute; HMn&eacute;l)</li></ul> <strong>V<font size="2">2 </font>- Take-Off Safety Speed</strong><ul><li>V<font size="2">2</font>&nbsp;for two-engine or three-engine turbo propeller powered aeroplanes may not be less than:&nbsp;1.13 V<font size="2">SR</font></li><li>1.1 V<font size="2">MCA (</font>V<font size="2">MC) (</font><font size="3">+10%)</font></li><li><font size="3">limited by&nbsp;</font>V<font size="2">MCA</font><font size="3">:&nbsp;</font>Flaps at high settings/With high pressure/With low temperature.</li><li>take-off climb speed or speed at 35 ft.</li><li>mostly V<font size="2">2</font>&lt;Vx,if increasing V<font size="2">2</font> allows higher TOM</li></ul> <strong>V<font size="2">3</font> The steady initial climb speed with all engines operating</strong><br /><br /><strong>V<font size="2">MBE</font> - Maximum Brake Energy Speed&nbsp;</strong><br />V<font size="2">MCG</font>&nbsp;&le; V<font size="2">EF</font>&nbsp;&lt; V<font size="2">1</font><br /><br /><span style="color:rgb(70, 73, 76); font-weight:600">mistake in the load sheet the aeroplane is 100 kg heavier</span><ul><li>V<font size="2">MU</font>&nbsp;will be higher.</li></ul> <strong>The "maximum tire speed" limits:</strong><ul><li>V<font size="2">LOF</font>&nbsp;in terms of ground speed. (this is the highest speed on ground roll)</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">bank angle should not exceed:</span><ul><li>15&deg; up to a height of 400 ft.</li></ul> <strong>The ASD required must consider an aborted take-off for both: engine failure and all engine cases.&#8203;</strong><br /><span style="color:rgb(70, 73, 76); font-weight:600">limit the Take-off Mass</span><ul><li>Rate of rotation of the wheel at lift off and brake energy.</li></ul><br /><em><strong style="color:rgb(70, 73, 76)">V2 MIN&nbsp;</strong><span style="color:rgb(70, 73, 76)">= Minimum take-off safety speed. It may not be less than:</span><br /><span style="color:rgb(70, 73, 76)">&bull;&nbsp;1.13 V</span>SR<span style="color:rgb(70, 73, 76)">&nbsp;for turbojets and <strong>2</strong> and <strong>3</strong> engined turboprops</span><br /><span style="color:rgb(70, 73, 76)">&bull; 1.08 V</span>SR<span style="color:rgb(70, 73, 76)">&nbsp;for turbojets with provisions for obtaining a significant reduction in the one-engine-inoperative power-on stall speed and <strong>4</strong> engined turboprops</span><br /><span style="color:rgb(70, 73, 76)">&bull; 1.1 V</span>MCA</em><br /><br /><span style="color:rgb(70, 73, 76); font-weight:600">In accordance with EASA CS 25 the take-off safety speed V</span>2 MIN<span style="color:rgb(70, 73, 76); font-weight:600">&nbsp;for turbo-propeller powered aeroplanes with more than three engines may not be less than:</span><ul><li>1.08 V<font size="2">SR</font></li></ul><br /><span style="color:rgb(70, 73, 76); font-weight:600">If the aircraft rotates earlier and at a much faster rate than expected what is the likely reason?</span><ul><li><font color="#da4444">1) The rotate speed, VR, has been miscalculated. </font>:<em> nem lesz much faster rate!</em></li><li>2) The stabilizer trim setting has been miscalculated.</li><li>4) The centre of gravity is too far aft.</li></ul> <strong style="color:rgb(70, 73, 76)">Balanced field length</strong><br /><u style="color:rgb(70, 73, 76)">No clearway, no stopway</u><br /><span style="color:rgb(70, 73, 76)">Take-off distance = accelerate/stop distance = balanced condition <strong>ASDA=TODA</strong></span><br /><span style="color:rgb(70, 73, 76)">V</span>1<span style="color:rgb(70, 73, 76)">&nbsp;= balanced</span><ul><li>The balanced field concept provides only one single V1&nbsp;value.</li><li>A balanced field length gives the minimum required field length in the event of an engine failure.</li></ul> <em><strong style="color:rgb(70, 73, 76)">Unbalanced field length</strong><br /><u style="color:rgb(70, 73, 76)">Clearway, no stopway</u><br /><span style="color:rgb(70, 73, 76)">Take-off distance &gt; accelerate/stop distance = unbalanced condition</span><br /><span style="color:rgb(70, 73, 76)">V</span>1<span style="color:rgb(70, 73, 76)">&nbsp;&lt; V</span>1<span style="color:rgb(70, 73, 76)">&nbsp;balanced</span><br /><span style="color:rgb(70, 73, 76)">V</span>1<span style="color:rgb(70, 73, 76)">&nbsp;has to be lower, to extend the maximum take-off distance and to reach a maximum take-off mass. If the pilot chooses a higher V</span>1<span style="color:rgb(70, 73, 76)">, the take-off mass has to be reduced!</span></em><ul><li>If there is a clearway and no stopway the take-off mass can be higher than the balanced field take-off mass, and the appropriate V1 needs to be lower than V1<font size="2">balanced</font>.</li></ul> <em><u style="color:rgb(70, 73, 76)">Stopway, no clearway</u><br /><span style="color:rgb(70, 73, 76)">Take-off distance &lt; accelerate/stop distance = unbalanced condition</span><br /><span style="color:rgb(70, 73, 76)">V</span>1<span style="color:rgb(70, 73, 76)">&nbsp;&gt; V</span>1<span style="color:rgb(70, 73, 76)">&nbsp;balanced</span><br /><span style="color:rgb(70, 73, 76)">V</span>1</em><span style="color:rgb(70, 73, 76)"><em>&nbsp;has to be higher, to utilize the longer accelerate/stop distance available and reaching a higher maximum take-off mass.</em><br /><br /><u><strong>balanced condition will give the highest take-off mass for a given runway</strong></u></span><br /><br />&#8203;<span style="color:rgb(70, 73, 76); font-weight:600">Reduced take-off thrust</span><ul><li>should normally not be used when&nbsp;windshear is reported on the take-off path.</li><li>only if the actual Take-off Mass (TOM) is lower than the field length limited TOM.</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">improved climb performance procedure</span><ul><li>If sufficient excess runway is available, the climb limited take-off mass and the climb gradient can be increased by increasing V2.</li></ul> <strong>climb limited take-off mass</strong><ul><li>The climb limited Take-off Mass is independent of the wind component.</li><li>The climb limited Take-off Mass decreases with increasing OAT.</li></ul> <strong>wet rwy</strong><ul><li><span style="color:rgb(70, 73, 76)">we can reduce the required screen-height from 35 ft&nbsp; to only 15 ft for take-off on a wet runway</span></li><li>A reduction of screen height is allowed in order to reduce weight penalties.</li></ul> <strong>contamined rwy</strong><ul><li>Reduced take-off thrust should normally not be used when:&nbsp;the runway is contaminated.</li><li>maximum crosswind for take-off on a contaminated runway surface is:&nbsp;<strong>10 kts</strong></li></ul> <strong>What is the advantage of balancing V1, even in the event of a climb limited take-off?</strong><ul><li>The safety margin with respect to the runway length is greatest.</li></ul> <strong>Which of the following statements, concerning the obstacle limited Take-off Mass for performance class A aeroplane, is correct?</strong><ul><li>It should be determined on the basis of a 35 ft obstacle clearance with respect to the "net take-off flight path".</li></ul> <strong>The engine failure take-off run is:</strong><ul><li>the <strong>horizontal </strong>distance along the take-off path from the start of the take-off to a point equidistant between the point at which VLOF&nbsp;is reached and the point at which the aeroplane is 35 ft above the take-off surface.</li></ul><br />90 m + 0.125 D<br /><br /><span style="color:rgb(70, 73, 76)">For the take-off climb gradient calculations we always have to assume that the critical engine fails at the V</span><font size="2">EF</font><span style="color:rgb(70, 73, 76)">&nbsp;speed</span><br /><br /><strong>The engine failure take-off run is:</strong><ul><li>1.5 times the distance from the point of brake release to a point equidistant between the point at which VLOF&nbsp;is reached and the point at which the aeroplane attains a height of 35 ft above the runway with all engines operative.</li></ul> <strong><span style="color:rgb(70, 73, 76)">down slope</span></strong><ul><li><span style="color:rgb(70, 73, 76)">decrease the take-off distance</span></li><li><span style="color:rgb(70, 73, 76)">allow a higher take-off mass</span></li><li>Accelerate-Stop Distance (ASD):&nbsp;decreases /therefore mass can increase</li><li>reduces V1&nbsp;and reduces take-off distance required (TODR).</li></ul> <span style="color:rgb(70, 73, 76)"><strong>upslope</strong></span><ul><li><span style="color:rgb(70, 73, 76)">increase the take-off distance</span></li><li><span style="color:rgb(70, 73, 76)">require a lower take-off mass</span></li><li>Accelerate-Stop Distance (ASD):&nbsp;increases /therefore mass must decrease</li><li>V<font size="2">1</font> can increase</li></ul> <strong>&#8203;take off mass</strong><ul><li>The Take-off Mass could be limited by:&nbsp;the take-off distance available (TODA), the maximum brake energy and the climb gradient with one engine inoperative.</li><li><span style="color:rgb(70, 73, 76); font-weight:600">0.5 cm of slush/reduced TOM:&nbsp;</span>decrease V<font size="2">1</font>&nbsp;and decrease V<font size="2">R</font>.</li></ul> <strong>net/gross flight path gradient</strong><ul><li>The net flight path climb gradient after take-off compared to the gross climb gradient is:&nbsp;smaller</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">higher&nbsp;</span><strong>OAT</strong><ul><li>decreases the brake energy limited Take-off Mass. (melegebb f&eacute;kek)</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">ACN</span><ul><li>may exceed the PCN by up to 10%.&#8203;</li></ul><strong>Reduced take-off thrust should normally not be used when:</strong><ul><li>anti skid is not usable.</li></ul></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a href='uploads/1/8/8/8/18889660/edited/class-a-take-off-climb.png' rel='lightbox' onclick='if (!lightboxLoaded) return false'>
+<img src="uploads/1/8/8/8/18889660/edited/class-a-take-off-climb.png?1497113539" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">The maximum acceleration height depends on the maximum time take-off thrust may be applied. (T/O thrust time is limited!)//The final segment starts at the end of segment 3 with the aircraft in a clean configuration, at the final segment climb speed with maximum continuous power set, ending at 1 500 ft or higher if there are distant obstacles to clear.	
+
+</div>
+</div></div>
+
+<div class="paragraph"><strong>The 1st&nbsp;segment of the take-off flight path ends:</strong><ul><li>at completion of gear retraction.&#8203;</li></ul> <span><strong>The maximum acceleration height depends on the maximum time take-off thrust may be applied. (T/O thrust time is limited!)<br /><br /></strong><strong>The final segment starts at the end of segment 3 with the aircraft in a clean configuration, at the final segment climb speed with maximum continuous power set, ending at 1 500 ft or higher if there are distant obstacles to clear.<br /></strong><br /><strong>&#8203;</strong></span><strong>Requirements for the 3rd&nbsp;segment of take-off climb are:</strong><ul><li><strong>&#8203;</strong>level acceleration with an equivalent gradient of 1.2%.<span></span></li></ul></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="uploads/1/8/8/8/18889660/toda-asda_5_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">If there is a clearway and no stopway the take-off mass can be higher than the balanced field take-off mass, and the appropriate V1 needs to be lower than V1balanced.	
+</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/8/8/8/18889660/v2-limits_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/8/8/8/18889660/speeds_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+<div class="paragraph"><em><strong style="color:rgb(70, 73, 76)">Gross Performance:</strong><span style="color:rgb(70, 73, 76)">&nbsp;The average performance that a fleet of aircraft should achieve if satisfactorily maintained and flown in accordance with the techniques described in the Flight Manual.</span><br /><br /><strong style="color:rgb(70, 73, 76)">Net Performance:</strong><span style="color:rgb(70, 73, 76)">&nbsp;Net performance is the gross performance diminished to allow for various contingencies that cannot be accounted for operationally, for example variations in piloting technique or temporary below average performance. It is improbable that the net performance will not be achieved in operation, provided the aircraft is flown in accordance with the recommended techniques.</span><br /><br /><strong style="color:rgb(70, 73, 76)">Gross Flight Path (GFP):</strong><span style="color:rgb(70, 73, 76)">&nbsp;The profile path of an aeroplane after it has reached the end of the take-off distance. The GFP is plotted using the gross performance data, and ends at the same horizontal distance from the point of take-off as does the NFP. It starts at the screen height and at any specific distance will always be above the NFP.</span><br /><br /><strong style="color:rgb(70, 73, 76)">Net Flight Path (NFP):</strong><span style="color:rgb(70, 73, 76)">&nbsp;The profile path of an aeroplane from the end of the take-off distance until it reaches 1</span><span style="color:rgb(70, 73, 76)">&nbsp;</span><span style="color:rgb(70, 73, 76)">500 feet net height above reference zero. It is plotted using the net performance data.</span><br /><br /><span style="color:rgb(70, 73, 76)">The net take-off path is based on the net gradient, which is the gross gradient reduced by the factors shown below. This factor depends on the number of engines:</span><br /><span style="color:rgb(70, 73, 76)">2 engines = 0.8% below gross</span><br /><span style="color:rgb(70, 73, 76)">3 engines = 0.9% below gross</span><br /><span style="color:rgb(70, 73, 76)">4 engines = 1.0% below gross</span></em></div>
+
+<div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+<hr class="styled-hr" style="width:100%;"></hr>
+<div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
+
+<div class="paragraph">Mach=TAS/LSS<br />Mach=CAS/Pstat<br />Increased cost index = increased speed<br /><br /><strong>Fuel mileage</strong><ul><li><span style="color:rgb(70, 73, 76)">(new SFC &divide; old SFC)&nbsp;&times; fuel mileage</span></li></ul> <strong><span style="color:rgb(70, 73, 76)">step climb</span></strong><ul><li>To fly as close as possible to the optimum altitude as aeroplane mass reduces.</li></ul> <strong>long range cruise</strong><ul><li>a speed slightly faster than the best range speed is used, this reduces sector times.</li><li>It is efficient to fly slightly faster than with maximum range speed.</li><li>because of the lower costs.</li></ul> <strong>opt alt</strong><ul><li>lighter plane: opt alt increases</li></ul> <strong>buffet</strong><ul><li>&nbsp;speed range&nbsp;narrows with increasing mass and increasing altitude.</li></ul> <strong>drift down</strong><ul><li>after engine failure if the aeroplane is above the one engine out maximum altitude.</li><li>always Vx!</li></ul> <strong>maximum quick turnaround mass</strong><ul><li>It is the maximum mass corresponding to the minimum time you need to wait before commencing another take-off.</li><li>He/she has to wait for a certain time until he/she can commence the next take-off.</li><li>Rapid exit taxiways should be avoided</li></ul><strong>Turbo prop</strong><ul><li>Maximum Landing Distance at the destination aerodrome and at any alternate aerodrome is <strong>0.7 x LDA</strong> (Landing Distance Available). (1/0,7=1,43 szorz&oacute;)</li><li>landing distance required at an alternate will be&nbsp;the same as that required at a destination aerodrome.</li></ul> <strong>Turbo jet</strong><ul><li>0.6&nbsp;x LDA (1/0.6=1,67 szorz&oacute;)</li></ul> <span style="color:rgb(70, 73, 76); font-weight:600">landing climb requirements</span><ul><li>Fuel dumping may be necessary in emergency situation.</li><li>one engine out, flaps APPROACH and gear UP.</li></ul> <strong>During an approach to landing in turbulent wind conditions:</strong><ul><li>VREF&nbsp;remains constant.</li></ul> <strong>Braking action</strong><ul><li>9 unreliable</li></ul><ul><li>0,25&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;0,35 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;0.40</li></ul> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;poor &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;medium &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; good&nbsp;<br /><br />2200*0.7/1.15 wet<br />3000*0.6/1.15<br />&#8203;47 / F / A / W / U<br />Maximum Range = Safe Fuel available x Specific Range<br />The optimum cruise altitude is:&nbsp;the pressure altitude at which the best <strong>specific range</strong> can be achieved.<br /></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
+<a>
+<img src="uploads/1/8/8/8/18889660/published/datas_1.png?1503582197" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%">032-02 - Performance Class B: Single-engine Aeroplanes 26 Qs</div>
+</div></div>
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="uploads/1/8/8/8/18889660/tablazat-multi-is_orig.png" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+			</div>
+		</div>
+      </div>
+
+	</div>
+</div>
+
+</div>
+
+    </div><!-- end content-wrap -->
+
+    <div class="footer-wrap">
+      <div class="container">
+            <div class="footer">Create a <a target="_top" href="http://www.weebly.com/">free web site</a> with <a target="_top" href="http://www.weebly.com/" title="free web site">Weebly</a></div>
+      </div><!-- end container -->
+    </div><!-- end footer-wrap -->
+  </div>
+
+  <div class="nav mobile-nav"><ul class="wsite-menu-default">
+		<li id="pg867427237238482426" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Maps/Planning
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-897384195455747960"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="x.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			x
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg223211645393958085" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				Planning
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-322463266303559357"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="napi-leacutegteacuter.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Napi l&eacute;gt&eacute;r
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-531421936156234231"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="charts.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Charts
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-269243837972145726"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="id337jaacuteraacutes.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Id&#337;j&aacute;r&aacute;s
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-199870981241859222"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="docs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			docs
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-703911212760669783"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="c150.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			C150
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-937275827355669122"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="c150-motorleaacutellaacutes.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			C150 Motorle&aacute;ll&aacute;s
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-518268039378130722"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="p28.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			P28
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg137907232960682184" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				ATPL
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-777890229582407763"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Air law
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-612148365499184051"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="international-law.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			international law
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-933008125174731187"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="airworthiness.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Airworthiness
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-490534366309278466"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="personal-licencing.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Personal licencing
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-656692680256864312"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="rules-of-the-air.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Rules of the air
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-136673164368177048"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="proc-for-air-navigation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Proc for air navigation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-597115321768110199"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="ats-and-at-management.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			ATS and AT management
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-915527415522521761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Meteorology
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-159693454122956748"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="atmosphere.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Atmosphere
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-466369049991664939"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="wind.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Wind
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-622698772121098529"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="thermodynamics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Thermodynamics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-775657675576070235"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="clouds-and-fog.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Clouds and fog
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-724556565572537421"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="precipitation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Precipitation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-897585982112299900"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="air-masses-and-fronts.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Air masses and fronts
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-437467918144089716"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="pressure-systems.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Pressure systems
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-447743372879942379"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="climatology.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Climatology
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-260982233377245811"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="flight-hazards.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Flight hazards
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-628670345906212108"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="meteorological-informations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Meteorological informations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-586355978103584761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="lawmet.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Law/Met
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-492029960144779090"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="general-nav.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			General nav
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-750555429123266013"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="fplanning--monitoring.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			fplanning & monitoring
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-664084203886962006"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="instrumentation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Instrumentation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-223469679423429358"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="radio-nav.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Radio nav
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-499189569977120975"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="human-performance-and-limitations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Human performance and limitations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-700872247576515165"
+	class="wsite-menu-subitem-wrap wsite-nav-current"
+	>
+	<a
+				href="performance.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Performance
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-898820104287279457"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="operational-procedures.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Operational procedures
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-897975943447235426"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="aerodynamics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Aerodynamics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-860510153222629014"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="021---airframe-systems-electrics-power-plant.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			021 - Airframe, Systems, Electrics, Power Plant
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-110815252827732883"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="mass--balance.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Mass & Balance
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-608809449707034918"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="felvi.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Felvi
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-352234064618678341"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="lot.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			LOT
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg335447514373405440" class="wsite-menu-item-wrap">
+			<a
+						href="a320-flow.html"
+				class="wsite-menu-item"
+				>
+				A320 flow
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-543482231491823787"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="emerg-brief.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Emerg brief
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-139601529765840534"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="go-around.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Go around
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg161039352793297101" class="wsite-menu-item-wrap">
+			<a
+						href="ew.html"
+				class="wsite-menu-item"
+				>
+				EW
+			</a>
+			
+		</li>
+		<li id="pg153095001396538792" class="wsite-menu-item-wrap">
+			<a
+						href="be76.html"
+				class="wsite-menu-item"
+				>
+				Be76
+			</a>
+			
+		</li>
+		<li id="pg247435634188075838" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				TR
+			</a>
+			
+		</li>
+		<li id="pg816667733144839826" class="wsite-menu-item-wrap">
+			<a
+				class="wsite-menu-item"
+				>
+				Procedures
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-227391142337883491"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="airbus-procs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Airbus procs
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-579823370143501815"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="wzz-procs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			WZZ procs
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg726940671199790417" class="wsite-menu-item-wrap">
+			<a
+						href="memory-items.html"
+				class="wsite-menu-item"
+				>
+				Memory Items
+			</a>
+			
+		</li>
+</ul>
+</div>
+
+  <script type="text/javascript" src="files/theme/plugins.js"></script>
+  <script type="text/javascript" src="files/theme/custom.js"></script>
+    <div id="customer-accounts-app"></div>
+    <script src="http://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1234"></script>
+
+		
+	</body>
+</html>
