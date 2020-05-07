@@ -28,7 +28,7 @@
 @media (max-width: 575px){ .u-section-2 .u-sheet-1 {min-height: 287px} }.u-block-858e-1 {margin-top: 0; margin-bottom: 0}
 .u-block-858e-2 {position: absolute; bottom: 10px}
 .u-block-858e-3 {position: absolute; left: 0}
-.u-block-858e-4 {position: absolute; right: 0}.u-section-3-1 {background-image: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("images/fulke.jpg"); background-position: 50% 50%}
+.u-block-858e-4 {position: absolute; right: 0}.u-section-3-1 {background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/fulke.jpg"); background-position: 50% 50%}
 .u-section-3-1 .u-sheet-1 {min-height: 800px}
 .u-section-3-1 .u-text-1 {font-size: 1.5rem; margin: 60px auto} 
 
@@ -38,7 +38,7 @@
 
 @media (max-width: 767px){ .u-section-3-1 .u-sheet-1 {min-height: 380px} }
 
-@media (max-width: 575px){ .u-section-3-1 .u-sheet-1 {min-height: 287px} }.u-section-3-2 {background-image: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("images/bench.jpg"); background-position: 50% 50%}
+@media (max-width: 575px){ .u-section-3-1 .u-sheet-1 {min-height: 287px} }.u-section-3-2 {background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/bench.jpg"); background-position: 50% 50%}
 .u-section-3-2 .u-sheet-1 {min-height: 800px}
 .u-section-3-2 .u-text-1 {font-size: 1.5rem; margin: 60px auto} 
 
@@ -48,7 +48,7 @@
 
 @media (max-width: 767px){ .u-section-3-2 .u-sheet-1 {min-height: 380px} }
 
-@media (max-width: 575px){ .u-section-3-2 .u-sheet-1 {min-height: 287px} }.u-section-3-3 {background-image: linear-gradient(0deg, rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("images/hidingman.jpg"); background-position: 50% 50%}
+@media (max-width: 575px){ .u-section-3-2 .u-sheet-1 {min-height: 287px} }.u-section-3-3 {background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/hidingman.jpg"); background-position: 50% 50%}
 .u-section-3-3 .u-sheet-1 {min-height: 800px}
 .u-section-3-3 .u-text-1 {font-size: 1.5rem; margin: 60px auto} 
 
