@@ -136,12 +136,11 @@
 .u-section-6 .u-text-1 {margin: 54px auto 0}
 .u-section-6 .u-image-1 {width: 117px; height: 117px; margin: 30px auto 0}
 .u-section-6 .u-text-2 {margin: 54px 31px 0}
-.u-section-6 .u-btn-1 {background-image: none; border-style: solid; margin: 69px 40px 40px auto} 
+.u-section-6 .u-btn-1 {border-style: solid; font-size: 1.25rem; background-image: none; margin: 54px auto 55px} 
 
 @media (max-width: 1199px){ .u-section-6 {background-position: 50% 50%}
 .u-section-6 .u-sheet-1 {min-height: 458px}
-.u-section-6 .u-text-2 {margin-left: 25px; margin-right: 0}
-.u-section-6 .u-btn-1 {margin-right: 0} }
+.u-section-6 .u-text-2 {margin-left: 25px; margin-right: 0} }
 
 @media (max-width: 991px){ .u-section-6 .u-sheet-1 {min-height: 351px}
 .u-section-6 .u-text-2 {margin-left: 19px} }
