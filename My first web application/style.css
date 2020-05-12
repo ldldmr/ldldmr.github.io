@@ -1,0 +1,101 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("images/bg.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+.card {
+    width: 1450px; 
+    height: 400px;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+      top: 200px;
+      left: 10%;
+    margin: 0px;
+    background: cyan;
+    box-shadow: 0px 0px 10px 2px grey
+}
+
+.container {
+
+    margin: 0px;
+    width: 1450px;
+    background: white;
+    /* height: 400px;
+    width: 1500px; */
+
+    /* position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%; */
+
+    /* margin: 0; */
+    display: flex;
+    flex-direction: row;
+
+    /* justify-content: space-between; */
+    /* margin-bottom: 20px;
+    margin-top: 50px; */
+   
+}
+
+.box1 {    
+    width: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+/*   image-allign is megtortenik a text-allignnel */
+  background: white;
+  /* padding-top: 0px;
+  padding-bottom: 70px; */
+  box-shadow: 0px 0px 5px 2px grey
+}
+
+#mainimg {
+    margin: auto;
+    width: 100%;
+
+    /* height: 400px; */
+   
+}    
+
+.box2 {
+    width: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*   image-allign is megtortenik a text-allignnel */
+    background: white;
+  /* padding-top: 20px;
+  padding-bottom: 5px; */
+    box-shadow: 0px 0px 5px 2px grey
+}
+
+#larrow  {
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    width: 40%;
+    
+  }
+
+  #rarrow {
+      transform: rotate(0.5turn);
+      width: 40%;
+  }

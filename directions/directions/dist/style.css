@@ -28,3 +28,9 @@ p {
 .west {
   background: #7692E4;
 }
+
+button {
+  width: 300px;
+  height: 80px;
+
+}
