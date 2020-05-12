@@ -95,35 +95,34 @@
 .u-section-4 .u-container-layout-2 {padding-left: 10px; padding-right: 10px} }
 
 @media (max-width: 575px){ .u-section-4 .u-image-1 {min-height: 358px} }.u-section-5 {background-image: none; margin-top: 0; margin-bottom: 0}
-.u-section-5 .u-sheet-1 {min-height: 677px}
+.u-section-5 .u-sheet-1 {min-height: 745px}
 .u-section-5 .u-text-1 {margin: 19px auto 0 20px}
-.u-section-5 .u-layout-wrap-1 {margin: 27px auto 19px 0}
-.u-section-5 .u-layout-cell-1 {min-height: 607px; background-image: linear-gradient(#e5e5e5, #808080)}
+.u-section-5 .u-layout-wrap-1 {margin: 27px auto 60px 0}
+.u-section-5 .u-layout-cell-1 {min-height: 633px; background-image: linear-gradient(#e5e5e5, #808080)}
 .u-section-5 .u-container-layout-1 {padding: 30px}
 .u-section-5 .u-image-1 {width: 95px; height: 85px; margin: 0 auto}
-.u-section-5 .u-text-2 {margin: 11px 0 0}
-.u-section-5 .u-text-3 {font-size: 1.25rem; margin: 38px 0 0}
-.u-section-5 .u-layout-cell-2 {min-height: 607px; background-image: linear-gradient(#e5e5e5, #808080)}
+.u-section-5 .u-text-2 {margin: 27px 0 0}
+.u-section-5 .u-text-3 {font-size: 1.25rem; margin: 37px 0 0}
+.u-section-5 .u-layout-cell-2 {min-height: 633px; background-image: linear-gradient(#e5e5e5, #808080)}
 .u-section-5 .u-container-layout-2 {padding: 30px}
 .u-section-5 .u-image-2 {width: 95px; height: 85px; margin: 0 auto}
-.u-section-5 .u-text-4 {margin: 11px auto 0}
-.u-section-5 .u-text-5 {font-size: 1.25rem; margin: 38px 0 0}
-.u-section-5 .u-layout-cell-3 {min-height: 607px; background-image: linear-gradient(#e5e5e5, #808080)}
+.u-section-5 .u-text-4 {margin: 27px 0 0}
+.u-section-5 .u-text-5 {font-size: 1.25rem; margin: 37px 0 0}
+.u-section-5 .u-layout-cell-3 {min-height: 633px; background-image: linear-gradient(#e5e5e5, #808080)}
 .u-section-5 .u-container-layout-3 {padding: 30px}
 .u-section-5 .u-image-3 {width: 95px; height: 85px; margin: 0 auto}
-.u-section-5 .u-text-6 {margin: 20px 19px 0}
-.u-section-5 .u-text-7 {font-size: 1.25rem; margin: 20px 0 0} 
+.u-section-5 .u-text-6 {width: 204px; margin: 27px auto 0}
+.u-section-5 .u-text-7 {font-size: 1.25rem; margin: 37px 0 0} 
 
 @media (max-width: 1199px){ .u-section-5 .u-text-1 {margin-left: 16px}
 .u-section-5 .u-layout-wrap-1 {margin-right: initial; margin-left: initial}
 .u-section-5 .u-layout-cell-1 {min-height: 316px}
 .u-section-5 .u-layout-cell-2 {min-height: 316px}
-.u-section-5 .u-text-5 {height: 100px}
 .u-section-5 .u-layout-cell-3 {min-height: 316px}
-.u-section-5 .u-text-6 {width: 162px; height: 36px; margin-left: 0; margin-right: 0}
-.u-section-5 .u-text-7 {height: 320px} }
+.u-section-5 .u-text-6 {width: 211px} }
 
-@media (max-width: 991px){ .u-section-5 .u-text-1 {margin-left: 13px} }
+@media (max-width: 991px){ .u-section-5 .u-text-1 {margin-left: 13px}
+.u-section-5 .u-text-6 {width: 160px} }
 
 @media (max-width: 767px){ .u-section-5 .u-text-1 {margin-left: 9px}
 .u-section-5 .u-layout-cell-1 {min-height: auto}
@@ -135,18 +134,16 @@
 
 @media (max-width: 575px){ .u-section-5 .u-text-1 {margin-left: 6px} }.u-section-6 {background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/discord1.PNG")}
 .u-section-6 .u-sheet-1 {min-height: 556px}
-.u-section-6 .u-text-1 {margin: 163px auto 0}
-.u-section-6 .u-image-1 {width: 117px; height: 117px; margin: 36px auto 60px 512px} 
+.u-section-6 .u-text-1 {margin: 60px auto 0}
+.u-section-6 .u-image-1 {width: 117px; height: 117px; margin: 36px auto 60px} 
 
 @media (max-width: 1199px){ .u-section-6 {background-position: 50% 50%}
 .u-section-6 .u-sheet-1 {min-height: 458px} }
 
 @media (max-width: 991px){ .u-section-6 .u-sheet-1 {min-height: 351px} }
 
-@media (max-width: 767px){ .u-section-6 .u-sheet-1 {min-height: 263px}
-.u-section-6 .u-image-1 {margin-left: 423px} }
+@media (max-width: 767px){ .u-section-6 .u-sheet-1 {min-height: 263px} }
 
-@media (max-width: 575px){ .u-section-6 .u-sheet-1 {min-height: 287px}
-.u-section-6 .u-image-1 {margin-left: 223px} }.u-section-7 {background-image: none}
+@media (max-width: 575px){ .u-section-6 .u-sheet-1 {min-height: 287px} }.u-section-7 {background-image: none}
 .u-section-7 .u-sheet-1 {min-height: 105px}
 .u-section-7 .u-text-1 {margin: 40px auto}
