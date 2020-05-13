@@ -16787,7 +16787,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto Slab',serif;
+  font-family: Roboto,sans-serif;
 }
 /*end-variables font-family*/
 /*begin-variables color*/
@@ -16810,7 +16810,7 @@ h6 {
   font-family: 'Open Sans',sans-serif !important;
 }
 .u-custom-font.u-heading-font {
-  font-family: 'Roboto Slab',serif !important;
+  font-family: Roboto,sans-serif !important;
 }
 /*end-variables font*/
 /*begin-variables colors*/
@@ -26602,7 +26602,6 @@ a.u-link.u-text-hover-grey-90:hover {
     {
         margin-top: 20px;
         margin-bottom: 20px;
-        font-family: Open Sans, sans-serif;
     }
     .u-btn
     {
@@ -26722,20 +26721,6 @@ a.u-link.u-text-hover-grey-90:hover {
     /** cms-rules **/
 
     /** color-rules **/
-    .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header h2:not(.u-subtitle),
-    .u-gradient > .u-container-layout > h2:not(.u-subtitle),
-    .u-image:not(.u-shading) > .u-container-layout > h2:not(.u-subtitle),
-    h2:not(.u-subtitle)
-    {
-        color: #333333;
-    }
-    .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header p:not(.u-text-variant),
-    .u-gradient > .u-container-layout > p:not(.u-text-variant),
-    .u-image:not(.u-shading) > .u-container-layout > p:not(.u-text-variant),
-    p:not(.u-text-variant)
-    {
-        color: #333333;
-    }
     .u-overlap.u-overlap-transparent:not(.u-overlap-contrast) .u-header a,
     .u-gradient > .u-container-layout > a,
     .u-image:not(.u-shading) > .u-container-layout > a,
@@ -26784,14 +26769,6 @@ a.u-link.u-text-hover-grey-90:hover {
     /** color-rules **/
 
     /** alt-color-rules **/
-    .u-body-color h2:not(.u-subtitle),.u-palette-1-base h2:not(.u-subtitle),.u-palette-1-dark-3 h2:not(.u-subtitle),.u-palette-1-dark-2 h2:not(.u-subtitle),.u-palette-1-dark-1 h2:not(.u-subtitle),.u-palette-1 h2:not(.u-subtitle),.u-palette-1-light-1 h2:not(.u-subtitle),.u-palette-2-base h2:not(.u-subtitle),.u-palette-2-dark-3 h2:not(.u-subtitle),.u-palette-2-dark-2 h2:not(.u-subtitle),.u-palette-2-dark-1 h2:not(.u-subtitle),.u-palette-2 h2:not(.u-subtitle),.u-palette-2-light-1 h2:not(.u-subtitle),.u-palette-3-dark-3 h2:not(.u-subtitle),.u-palette-3-dark-2 h2:not(.u-subtitle),.u-palette-3-dark-1 h2:not(.u-subtitle),.u-palette-4-base h2:not(.u-subtitle),.u-palette-4-dark-3 h2:not(.u-subtitle),.u-palette-4-dark-2 h2:not(.u-subtitle),.u-palette-4-dark-1 h2:not(.u-subtitle),.u-palette-5-dark-3 h2:not(.u-subtitle),.u-palette-5-dark-2 h2:not(.u-subtitle),.u-palette-5-dark-1 h2:not(.u-subtitle),.u-grey-40 h2:not(.u-subtitle),.u-grey-30 h2:not(.u-subtitle),.u-grey-90 h2:not(.u-subtitle),.u-grey-80 h2:not(.u-subtitle),.u-grey-75 h2:not(.u-subtitle),.u-black h2:not(.u-subtitle),.u-grey-70 h2:not(.u-subtitle),.u-grey-60 h2:not(.u-subtitle),.u-grey-50 h2:not(.u-subtitle),.u-grey-dark-3 h2:not(.u-subtitle),.u-grey-dark-2 h2:not(.u-subtitle),.u-grey-dark-1 h2:not(.u-subtitle),.u-grey h2:not(.u-subtitle),.u-shading h2:not(.u-subtitle),.u-overlap-contrast .u-header h2:not(.u-subtitle):not(.u-nav-link):not(.u-btn)
-    {
-        color: #ffffff;
-    }
-    .u-body-color p:not(.u-text-variant),.u-palette-1-base p:not(.u-text-variant),.u-palette-1-dark-3 p:not(.u-text-variant),.u-palette-1-dark-2 p:not(.u-text-variant),.u-palette-1-dark-1 p:not(.u-text-variant),.u-palette-1 p:not(.u-text-variant),.u-palette-1-light-1 p:not(.u-text-variant),.u-palette-2-base p:not(.u-text-variant),.u-palette-2-dark-3 p:not(.u-text-variant),.u-palette-2-dark-2 p:not(.u-text-variant),.u-palette-2-dark-1 p:not(.u-text-variant),.u-palette-2 p:not(.u-text-variant),.u-palette-2-light-1 p:not(.u-text-variant),.u-palette-3-dark-3 p:not(.u-text-variant),.u-palette-3-dark-2 p:not(.u-text-variant),.u-palette-3-dark-1 p:not(.u-text-variant),.u-palette-4-base p:not(.u-text-variant),.u-palette-4-dark-3 p:not(.u-text-variant),.u-palette-4-dark-2 p:not(.u-text-variant),.u-palette-4-dark-1 p:not(.u-text-variant),.u-palette-5-dark-3 p:not(.u-text-variant),.u-palette-5-dark-2 p:not(.u-text-variant),.u-palette-5-dark-1 p:not(.u-text-variant),.u-grey-40 p:not(.u-text-variant),.u-grey-30 p:not(.u-text-variant),.u-grey-90 p:not(.u-text-variant),.u-grey-80 p:not(.u-text-variant),.u-grey-75 p:not(.u-text-variant),.u-black p:not(.u-text-variant),.u-grey-70 p:not(.u-text-variant),.u-grey-60 p:not(.u-text-variant),.u-grey-50 p:not(.u-text-variant),.u-grey-dark-3 p:not(.u-text-variant),.u-grey-dark-2 p:not(.u-text-variant),.u-grey-dark-1 p:not(.u-text-variant),.u-grey p:not(.u-text-variant),.u-shading p:not(.u-text-variant),.u-overlap-contrast .u-header p:not(.u-text-variant):not(.u-nav-link):not(.u-btn)
-    {
-        color: #ffffff;
-    }
     .u-body-color a,.u-palette-1-base a,.u-palette-1-dark-3 a,.u-palette-1-dark-2 a,.u-palette-1-dark-1 a,.u-palette-1 a,.u-palette-1-light-1 a,.u-palette-2-base a,.u-palette-2-dark-3 a,.u-palette-2-dark-2 a,.u-palette-2-dark-1 a,.u-palette-2 a,.u-palette-2-light-1 a,.u-palette-3-dark-3 a,.u-palette-3-dark-2 a,.u-palette-3-dark-1 a,.u-palette-4-base a,.u-palette-4-dark-3 a,.u-palette-4-dark-2 a,.u-palette-4-dark-1 a,.u-palette-5-dark-3 a,.u-palette-5-dark-2 a,.u-palette-5-dark-1 a,.u-grey-40 a,.u-grey-30 a,.u-grey-90 a,.u-grey-80 a,.u-grey-75 a,.u-black a,.u-grey-70 a,.u-grey-60 a,.u-grey-50 a,.u-grey-dark-3 a,.u-grey-dark-2 a,.u-grey-dark-1 a,.u-grey a,.u-shading a,.u-overlap-contrast .u-header a:not(.u-nav-link):not(.u-btn)
     {
         color: #adcce9;
@@ -26821,21 +26798,22 @@ a.u-link.u-text-hover-grey-90:hover {
 
 /*end-variables sitestylecss*/
  .u-header {background-image: none}
-.u-header .u-sheet-1 {min-height: 79px}
-.u-header .u-image-1 {width: 40px; height: 40px; margin: 18px 0 0 auto}
-.u-header .u-menu-1 {margin: -42px auto 19px 0}
-.u-header .u-nav-1 {font-size: 1rem}
-.u-header .u-nav-2 {font-size: 1rem} 
+.u-header .u-sheet-1 {min-height: 80px}
+.u-header .u-menu-1 {margin: 22px auto 22px 11px}
+.u-header .u-nav-1 {font-size: 1rem; letter-spacing: 0}
+.u-header .u-nav-2 {font-size: 1.25rem} 
+@media (max-width: 1199px){ .u-header .u-menu-1 {width: auto; margin-top: 24px; margin-left: 0} }
 
 
-
-
+@media (max-width: 575px){ .u-header .u-menu-1 {margin-bottom: 24px} }
  .u-footer {background-image: none}
-.u-footer .u-sheet-1 {min-height: 10px} 
+.u-footer .u-sheet-1 {min-height: 120px}
+.u-footer .u-text-1 {width: 417px; margin: 49px auto} 
 @media (max-width: 1199px){ .u-footer .u-sheet-1 {min-height: 99px} }
 @media (max-width: 991px){ .u-footer .u-sheet-1 {min-height: 76px} }
 @media (max-width: 767px){ .u-footer .u-sheet-1 {min-height: 57px} }
-@media (max-width: 575px){ .u-footer .u-sheet-1 {min-height: 36px} }
+@media (max-width: 575px){ .u-footer .u-sheet-1 {min-height: 36px}
+.u-footer .u-text-1 {width: 340px} }
 
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
