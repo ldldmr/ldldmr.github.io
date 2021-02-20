@@ -26805,7 +26805,7 @@ a.u-link.u-text-hover-grey-90:hover {
 @media (max-width: 1199px){ .u-header .u-menu-1 {margin-right: 0} }
 
 
-
+@media (max-width: 575px){ .u-header .u-menu-1 {width: 24px; height: 32px} }
  .u-footer {background-image: none}
 .u-footer .u-sheet-1 {min-height: 120px}
 .u-footer .u-text-1 {width: 417px; margin: 49px auto} 
