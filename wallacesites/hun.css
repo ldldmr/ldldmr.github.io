@@ -201,4 +201,7 @@
 .u-section-8 .u-container-layout-2 {padding-left: 10px; padding-right: 10px} }
 
 @media (max-width: 575px){ .u-section-8 .u-sheet-1 {min-height: 179px}
-.u-section-8 .u-image-1 {min-height: 358px} }
+.u-section-8 .u-image-1 {min-height: 358px} }.u-section-9 {min-height: 500px}
+.u-section-9 .u-custom-html-1 {min-height: 500px; height: auto; margin: 0} 
+
+@media (max-width: 1199px){ .u-section-9 .u-custom-html-1 {margin-right: initial; margin-left: initial} }
