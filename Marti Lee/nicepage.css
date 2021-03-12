@@ -26886,15 +26886,14 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-header .u-menu-1 {width: auto; margin-top: -80px} }
 
 @media (max-width: 767px){ .u-header .u-image-1 {width: auto} }
-
+@media (max-width: 575px){ .u-header .u-image-1 {width: auto}
+.u-header .u-menu-1 {margin-top: -48px; margin-bottom: 33px} }
  .u-footer {background-image: none}
-.u-footer .u-sheet-1 {min-height: 120px}
-.u-footer .u-text-1 {width: 417px; margin: 49px auto} 
+.u-footer .u-sheet-1 {min-height: 120px} 
 @media (max-width: 1199px){ .u-footer .u-sheet-1 {min-height: 99px} }
 @media (max-width: 991px){ .u-footer .u-sheet-1 {min-height: 76px} }
 @media (max-width: 767px){ .u-footer .u-sheet-1 {min-height: 57px} }
-@media (max-width: 575px){ .u-footer .u-sheet-1 {min-height: 36px}
-.u-footer .u-text-1 {width: 340px} }
+@media (max-width: 575px){ .u-footer .u-sheet-1 {min-height: 36px} }
 
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
