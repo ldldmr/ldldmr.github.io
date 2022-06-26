@@ -26952,29 +26952,29 @@ a.u-link.u-text-hover-grey-90:hover {
 
 
 /*end-variables sitestylecss*/
- .u-header {background-image: linear-gradient(#478ac9, #ccd3db); min-height: 81px}
-.u-header .u-image-1 {width: calc(((100% - 1140px) / 2) + 73px); margin: 7px auto 0 calc(((100% - 1140px) / 2) + -90px)}
+ .u-header {background-image: linear-gradient(#478ac9, #ccd3db)}
+.u-header .u-sheet-1 {min-height: 81px}
+.u-header .u-image-1 {margin: 7px auto 0 0}
 .u-header .u-logo-image-1 {max-width: 167px; max-height: 167px}
-.u-header .u-menu-1 {margin: -49px calc(((100% - 1140px) / 2) + -56px) 24px auto}
+.u-header .u-menu-1 {margin: -49px 25px 24px auto}
 .u-header .u-nav-1 {font-size: 1rem; letter-spacing: 0; text-transform: uppercase; font-weight: 700}
 .u-header .u-nav-2 {font-size: 1.25rem} 
 @media (max-width: 1199px){ .u-header {min-height: 81px}
-.u-header .u-image-1 {margin-left: calc(((100% - 940px) / 2) + -90px); width: calc(((100% - 940px) / 2) + 73px)}
-.u-header .u-menu-1 {margin-right: calc(((100% - 940px) / 2))} }
-@media (max-width: 991px){ .u-header .u-image-1 {margin-left: calc(((100% - 720px) / 2) + -90px); width: calc(((100% - 720px) / 2) + 73px)}
-.u-header .u-menu-1 {margin-right: calc(((100% - 720px) / 2))} }
-@media (max-width: 767px){ .u-header .u-image-1 {width: calc(((100% - 540px) / 2) + 73px); margin-left: calc(((100% - 540px) / 2) + -90px)}
-.u-header .u-menu-1 {margin-right: calc(((100% - 540px) / 2))} }
-@media (max-width: 575px){ .u-header .u-image-1 {margin-left: 0; width: auto}
-.u-header .u-menu-1 {width: auto; margin-right: calc(((100% - 340px) / 2) + -36px); margin-bottom: 25px} }
+.u-header .u-sheet-1 {min-height: 81px}
+.u-header .u-image-1 {margin-left: 0; width: calc(((100% - 940px) / 2) + 73px)}
+.u-header .u-menu-1 {margin-right: 0} }
+@media (max-width: 991px){ .u-header .u-image-1 {width: calc(((100% - 720px) / 2) + 73px)} }
+@media (max-width: 767px){ .u-header .u-image-1 {width: calc(((100% - 540px) / 2) + 73px)} }
+@media (max-width: 575px){ .u-header .u-image-1 {width: auto}
+.u-header .u-menu-1 {width: auto; margin-right: 11px; margin-bottom: 25px} }
  .u-footer {background-image: none}
 .u-footer .u-sheet-1 {min-height: 120px}
 .u-footer .u-text-1 {width: 417px; margin: 49px auto 60px} 
 @media (max-width: 1199px){ .u-footer .u-sheet-1 {min-height: 29px} }
 
 @media (max-width: 767px){ .u-footer .u-sheet-1 {min-height: 914px} }
-@media (max-width: 575px){ .u-footer .u-sheet-1 {min-height: 492px}
-.u-footer .u-text-1 {width: 340px} }
+@media (max-width: 575px){ .u-footer .u-sheet-1 {min-height: 120px}
+.u-footer .u-text-1 {width: 340px; margin-bottom: 49px} }
 
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
